@@ -1,0 +1,14 @@
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\bin\Debug\CharacterGen.exe.config
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\bin\Debug\CharacterGen.exe
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\bin\Debug\CharacterGen.pdb
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\bin\Debug\CharacterGen.xml
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.vbprojResolveAssemblyReference.cache
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.AbScores.resources
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Initial.resources
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Resources.resources
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.vbproj.GenerateResource.Cache
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.exe
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.xml
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.pdb
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Feats.resources
+c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Skills.resources
