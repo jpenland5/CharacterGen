@@ -12,3 +12,5 @@ c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\ob
 c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.pdb
 c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Feats.resources
 c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Skills.resources
+C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Race.resources
+C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Classes.resources

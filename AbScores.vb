@@ -308,12 +308,12 @@
             Exit Sub
         End If
         Initial.btnFeats.Enabled = 1
-        Initial.lblSTR.Text = "Strength: " & mSTR.ToString
-        Initial.lblDEX.Text = "Dexterity: " & mDEX.ToString
-        Initial.lblCON.Text = "Constitution: " & mCON.ToString
-        Initial.lblINT.Text = "Intelligence: " & mINT.ToString
-        Initial.lblWIS.Text = "Wisdom: " & mWIS.ToString
-        Initial.lblCHA.Text = "Charisma: " & mCHA.ToString
+        Initial.lblSTR.Text = "Strength: " & mSTR + Initial.RaceMod.Item(1)
+        Initial.lblDEX.Text = "Dexterity: " & mDEX.ToString + Initial.RaceMod.Item(2)
+        Initial.lblCON.Text = "Constitution: " & mCON.ToString + Initial.RaceMod.Item(3)
+        Initial.lblINT.Text = "Intelligence: " & mINT.ToString + Initial.RaceMod.Item(4)
+        Initial.lblWIS.Text = "Wisdom: " & mWIS.ToString + Initial.RaceMod.Item(5)
+        Initial.lblCHA.Text = "Charisma: " & mCHA.ToString + Initial.RaceMod.Item(6)
         Me.Close()
     End Sub
 

@@ -27,25 +27,29 @@ Partial Class Initial
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lblSTR = New System.Windows.Forms.Label()
-        Me.lblDEX = New System.Windows.Forms.Label()
-        Me.lblCON = New System.Windows.Forms.Label()
-        Me.lblINT = New System.Windows.Forms.Label()
-        Me.lblWIS = New System.Windows.Forms.Label()
         Me.lblCHA = New System.Windows.Forms.Label()
+        Me.lblWIS = New System.Windows.Forms.Label()
+        Me.lblINT = New System.Windows.Forms.Label()
+        Me.lblCON = New System.Windows.Forms.Label()
+        Me.lblDEX = New System.Windows.Forms.Label()
+        Me.lblSTR = New System.Windows.Forms.Label()
         Me.btnScores = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LoadCharacterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveCharacterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LoadCharacterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnSkills = New System.Windows.Forms.Button()
         Me.btnFeats = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnClass = New System.Windows.Forms.Button()
+        Me.btnRace = New System.Windows.Forms.Button()
+        Me.lblRace = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -91,67 +95,12 @@ Partial Class Initial
         Me.GroupBox1.Controls.Add(Me.lblCON)
         Me.GroupBox1.Controls.Add(Me.lblDEX)
         Me.GroupBox1.Controls.Add(Me.lblSTR)
-        Me.GroupBox1.Location = New System.Drawing.Point(21, 66)
+        Me.GroupBox1.Location = New System.Drawing.Point(21, 128)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(118, 157)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ability Scores"
-        '
-        'lblSTR
-        '
-        Me.lblSTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblSTR.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblSTR.Location = New System.Drawing.Point(15, 22)
-        Me.lblSTR.Name = "lblSTR"
-        Me.lblSTR.Size = New System.Drawing.Size(90, 20)
-        Me.lblSTR.TabIndex = 0
-        Me.lblSTR.Text = "Strength: "
-        Me.lblSTR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblDEX
-        '
-        Me.lblDEX.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblDEX.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblDEX.Location = New System.Drawing.Point(15, 42)
-        Me.lblDEX.Name = "lblDEX"
-        Me.lblDEX.Size = New System.Drawing.Size(90, 20)
-        Me.lblDEX.TabIndex = 1
-        Me.lblDEX.Text = "Dexterity: "
-        Me.lblDEX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblCON
-        '
-        Me.lblCON.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblCON.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblCON.Location = New System.Drawing.Point(15, 62)
-        Me.lblCON.Name = "lblCON"
-        Me.lblCON.Size = New System.Drawing.Size(90, 20)
-        Me.lblCON.TabIndex = 2
-        Me.lblCON.Text = "Constitution: "
-        Me.lblCON.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblINT
-        '
-        Me.lblINT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblINT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblINT.Location = New System.Drawing.Point(15, 82)
-        Me.lblINT.Name = "lblINT"
-        Me.lblINT.Size = New System.Drawing.Size(90, 20)
-        Me.lblINT.TabIndex = 3
-        Me.lblINT.Text = "Intelligence: "
-        Me.lblINT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblWIS
-        '
-        Me.lblWIS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblWIS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblWIS.Location = New System.Drawing.Point(15, 102)
-        Me.lblWIS.Name = "lblWIS"
-        Me.lblWIS.Size = New System.Drawing.Size(90, 20)
-        Me.lblWIS.TabIndex = 5
-        Me.lblWIS.Text = "Wisdom: "
-        Me.lblWIS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblCHA
         '
@@ -161,16 +110,71 @@ Partial Class Initial
         Me.lblCHA.Name = "lblCHA"
         Me.lblCHA.Size = New System.Drawing.Size(90, 20)
         Me.lblCHA.TabIndex = 6
-        Me.lblCHA.Text = "Charisma: "
+        Me.lblCHA.Text = "Charisma: 8"
         Me.lblCHA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblWIS
+        '
+        Me.lblWIS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWIS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblWIS.Location = New System.Drawing.Point(15, 102)
+        Me.lblWIS.Name = "lblWIS"
+        Me.lblWIS.Size = New System.Drawing.Size(90, 20)
+        Me.lblWIS.TabIndex = 5
+        Me.lblWIS.Text = "Wisdom: 8"
+        Me.lblWIS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblINT
+        '
+        Me.lblINT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblINT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblINT.Location = New System.Drawing.Point(15, 82)
+        Me.lblINT.Name = "lblINT"
+        Me.lblINT.Size = New System.Drawing.Size(90, 20)
+        Me.lblINT.TabIndex = 3
+        Me.lblINT.Text = "Intelligence: 8"
+        Me.lblINT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblCON
+        '
+        Me.lblCON.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblCON.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblCON.Location = New System.Drawing.Point(15, 62)
+        Me.lblCON.Name = "lblCON"
+        Me.lblCON.Size = New System.Drawing.Size(90, 20)
+        Me.lblCON.TabIndex = 2
+        Me.lblCON.Text = "Constitution: 8"
+        Me.lblCON.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblDEX
+        '
+        Me.lblDEX.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblDEX.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblDEX.Location = New System.Drawing.Point(15, 42)
+        Me.lblDEX.Name = "lblDEX"
+        Me.lblDEX.Size = New System.Drawing.Size(90, 20)
+        Me.lblDEX.TabIndex = 1
+        Me.lblDEX.Text = "Dexterity: 8"
+        Me.lblDEX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblSTR
+        '
+        Me.lblSTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblSTR.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblSTR.Location = New System.Drawing.Point(15, 22)
+        Me.lblSTR.Name = "lblSTR"
+        Me.lblSTR.Size = New System.Drawing.Size(90, 20)
+        Me.lblSTR.TabIndex = 0
+        Me.lblSTR.Text = "Strength: 8"
+        Me.lblSTR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnScores
         '
-        Me.btnScores.Location = New System.Drawing.Point(154, 81)
+        Me.btnScores.Location = New System.Drawing.Point(163, 128)
         Me.btnScores.Name = "btnScores"
         Me.btnScores.Size = New System.Drawing.Size(129, 23)
         Me.btnScores.TabIndex = 5
-        Me.btnScores.Text = "Buy Ability Scores"
+        Me.btnScores.Text = "Choose Ability Scores"
         Me.btnScores.UseVisualStyleBackColor = True
         '
         'MenuStrip1
@@ -189,12 +193,36 @@ Partial Class Initial
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
+        'NewToolStripMenuItem
+        '
+        Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewToolStripMenuItem.Text = "New Character"
+        '
+        'SaveCharacterToolStripMenuItem
+        '
+        Me.SaveCharacterToolStripMenuItem.Name = "SaveCharacterToolStripMenuItem"
+        Me.SaveCharacterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveCharacterToolStripMenuItem.Text = "Save Character"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadCharacterToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.ViewToolStripMenuItem.Text = "View"
+        '
+        'LoadCharacterToolStripMenuItem
+        '
+        Me.LoadCharacterToolStripMenuItem.Name = "LoadCharacterToolStripMenuItem"
+        Me.LoadCharacterToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.LoadCharacterToolStripMenuItem.Text = "Load Character"
         '
         'HelpToolStripMenuItem
         '
@@ -203,39 +231,15 @@ Partial Class Initial
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
-        'NewToolStripMenuItem
-        '
-        Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NewToolStripMenuItem.Text = "New Character"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'LoadCharacterToolStripMenuItem
-        '
-        Me.LoadCharacterToolStripMenuItem.Name = "LoadCharacterToolStripMenuItem"
-        Me.LoadCharacterToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
-        Me.LoadCharacterToolStripMenuItem.Text = "Load Character"
-        '
-        'SaveCharacterToolStripMenuItem
-        '
-        Me.SaveCharacterToolStripMenuItem.Name = "SaveCharacterToolStripMenuItem"
-        Me.SaveCharacterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SaveCharacterToolStripMenuItem.Text = "Save Character"
-        '
         'ContentsToolStripMenuItem
         '
         Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
-        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.ContentsToolStripMenuItem.Text = "Contents"
         '
         'btnSkills
         '
-        Me.btnSkills.Location = New System.Drawing.Point(154, 139)
+        Me.btnSkills.Location = New System.Drawing.Point(163, 186)
         Me.btnSkills.Name = "btnSkills"
         Me.btnSkills.Size = New System.Drawing.Size(129, 23)
         Me.btnSkills.TabIndex = 7
@@ -244,7 +248,7 @@ Partial Class Initial
         '
         'btnFeats
         '
-        Me.btnFeats.Location = New System.Drawing.Point(154, 110)
+        Me.btnFeats.Location = New System.Drawing.Point(163, 157)
         Me.btnFeats.Name = "btnFeats"
         Me.btnFeats.Size = New System.Drawing.Size(129, 23)
         Me.btnFeats.TabIndex = 8
@@ -254,18 +258,62 @@ Partial Class Initial
         'btnSave
         '
         Me.btnSave.Enabled = False
-        Me.btnSave.Location = New System.Drawing.Point(154, 168)
+        Me.btnSave.Location = New System.Drawing.Point(163, 215)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(129, 23)
         Me.btnSave.TabIndex = 9
         Me.btnSave.Text = "Save Character"
         Me.btnSave.UseVisualStyleBackColor = True
         '
+        'btnClass
+        '
+        Me.btnClass.Location = New System.Drawing.Point(165, 99)
+        Me.btnClass.Name = "btnClass"
+        Me.btnClass.Size = New System.Drawing.Size(129, 23)
+        Me.btnClass.TabIndex = 10
+        Me.btnClass.Text = "Choose Class"
+        Me.btnClass.UseVisualStyleBackColor = True
+        '
+        'btnRace
+        '
+        Me.btnRace.Location = New System.Drawing.Point(165, 70)
+        Me.btnRace.Name = "btnRace"
+        Me.btnRace.Size = New System.Drawing.Size(129, 23)
+        Me.btnRace.TabIndex = 11
+        Me.btnRace.Text = "Choose Race"
+        Me.btnRace.UseVisualStyleBackColor = True
+        '
+        'lblRace
+        '
+        Me.lblRace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblRace.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblRace.Location = New System.Drawing.Point(36, 71)
+        Me.lblRace.Name = "lblRace"
+        Me.lblRace.Size = New System.Drawing.Size(90, 20)
+        Me.lblRace.TabIndex = 7
+        Me.lblRace.Text = "Race: "
+        Me.lblRace.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label4.Location = New System.Drawing.Point(36, 100)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(90, 20)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Class: "
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(304, 484)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblRace)
+        Me.Controls.Add(Me.btnRace)
+        Me.Controls.Add(Me.btnClass)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnFeats)
         Me.Controls.Add(Me.btnSkills)
@@ -311,4 +359,8 @@ Partial Class Initial
     Friend WithEvents btnSkills As Button
     Friend WithEvents btnFeats As Button
     Friend WithEvents btnSave As Button
+    Friend WithEvents btnClass As Button
+    Friend WithEvents btnRace As Button
+    Friend WithEvents lblRace As Label
+    Friend WithEvents Label4 As Label
 End Class
