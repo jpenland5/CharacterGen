@@ -7,6 +7,12 @@
     End Sub
 
     Private Sub btnScores_Click(sender As Object, e As EventArgs) Handles btnScores.Click
+        lblSTR.Text = "Strength: 8"
+        lblDEX.Text = "Dexterity: 8"
+        lblCON.Text = "Constitution: 8"
+        lblINT.Text = "Intelligence: 8"
+        lblWIS.Text = "Wisdom: 8"
+        lblCHA.Text = "Charisma: 8"
         Dim oPointBuy As AbScores
         oPointBuy = New AbScores()
         oPointBuy.Show()

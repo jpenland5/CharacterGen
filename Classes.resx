@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>Welcome to class selection! Classes are most easily equated to being the profession of your character. In the world of D&amp;D, you can be an expert at anything from picking locks, to weaving magical incantations into powerful spells, or even just hitting things really hard with a big club. Select a class for more information.
+</value>
+  </data>
 </root>
