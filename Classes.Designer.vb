@@ -37,7 +37,7 @@ Partial Class Classes
         Me.rtbClassDetail = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnBarb
@@ -168,21 +168,21 @@ Partial Class Classes
         Me.btnSave.Text = "Save Class"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnBack
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 384)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "Wizard"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnBack.Location = New System.Drawing.Point(12, 384)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBack.TabIndex = 14
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'Classes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(427, 439)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.rtbClassDetail)
@@ -217,5 +217,5 @@ Partial Class Classes
     Friend WithEvents rtbClassDetail As RichTextBox
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents btnSave As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnBack As Button
 End Class

@@ -47,4 +47,5 @@
         oClass = New Classes()
         oClass.Show()
     End Sub
+
 End Class
