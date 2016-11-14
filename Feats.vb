@@ -12,4 +12,14 @@
     Private Sub Feats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
+        'Enables the button for the next step
+        Initial.btnSkills.Enabled = True
+
+        'Closes the form
+        Me.Close()
+
+    End Sub
 End Class

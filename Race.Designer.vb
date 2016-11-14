@@ -154,6 +154,7 @@ Partial Class Race
         Me.Controls.Add(Me.btnHuman)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Name = "Race"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Race"
         Me.ResumeLayout(False)
 

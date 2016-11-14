@@ -33,6 +33,8 @@ Partial Class Feats
         Me.rtbFeatInfo = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.chkAlertness = New System.Windows.Forms.CheckBox()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'chkAmbidex
@@ -148,11 +150,31 @@ Partial Class Feats
         Me.chkAlertness.Text = "Alertness"
         Me.chkAlertness.UseVisualStyleBackColor = True
         '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(13, 220)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(108, 23)
+        Me.btnSave.TabIndex = 12
+        Me.btnSave.Text = "Save Feats"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnBack
+        '
+        Me.btnBack.Location = New System.Drawing.Point(16, 249)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(105, 23)
+        Me.btnBack.TabIndex = 13
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'Feats
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(454, 228)
+        Me.ClientSize = New System.Drawing.Size(454, 283)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.chkAlertness)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.rtbFeatInfo)
@@ -165,6 +187,7 @@ Partial Class Feats
         Me.Controls.Add(Me.chkArmorH)
         Me.Controls.Add(Me.chkAmbidex)
         Me.Name = "Feats"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Feats"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -181,4 +204,6 @@ Partial Class Feats
     Friend WithEvents rtbFeatInfo As RichTextBox
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents chkAlertness As CheckBox
+    Friend WithEvents btnSave As Button
+    Friend WithEvents btnBack As Button
 End Class

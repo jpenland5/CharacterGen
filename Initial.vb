@@ -9,15 +9,11 @@
     'Creates dictionary for tracking skill points
     Public Skills As New Dictionary(Of String, Integer)
 
-    Private Sub btnScores_Click(sender As Object, e As EventArgs) Handles btnScores.Click
+    Public mAlignment As String
 
-        'Updates ability scores dictionary with default values
-        AbScores.Add("STR", 8)
-        AbScores.Add("DEX", 8)
-        AbScores.Add("CON", 8)
-        AbScores.Add("INT", 8)
-        AbScores.Add("WIS", 8)
-        AbScores.Add("CHA", 8)
+    Public mClassSkillMod As Integer = 4
+
+    Private Sub btnScores_Click(sender As Object, e As EventArgs) Handles btnScores.Click
 
         'Resets all ability scores to default values
         lblSTR.Text = "Strength: 8"
@@ -87,4 +83,14 @@
         oGender.Show()
 
     End Sub
+
+    Private Sub btnAlign_Click(sender As Object, e As EventArgs) Handles btnAlign.Click
+
+        'Brings up the form for selecting the character's alignment
+        Dim oAlign As Alignment
+        oAlign = New Alignment()
+        oAlign.Show()
+
+    End Sub
+
 End Class

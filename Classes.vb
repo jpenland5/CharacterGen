@@ -84,6 +84,7 @@
             Initial.lblClass.Text = "Class: Bard"
         ElseIf mClass = 3 Then
             Initial.lblClass.Text = "Class: Cleric"
+            Initial.mClassSkillMod = 2
         ElseIf mClass = 4 Then
             Initial.lblClass.Text = "Class: Druid"
         ElseIf mClass = 5 Then
@@ -97,6 +98,9 @@
             MessageBox.Show("Please select a class before continuing!")
             Exit Sub
         End If
+
+        'Enables the button for the next step
+        Initial.btnAlign.Enabled = True
 
         'Closes the form
         Me.Close()

@@ -15,3 +15,4 @@ c:\users\xeku\documents\visual studio 2015\Projects\CharacterGen\CharacterGen\ob
 C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Race.resources
 C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Classes.resources
 C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Gender.resources
+C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Alignment.resources

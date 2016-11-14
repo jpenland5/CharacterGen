@@ -46,6 +46,7 @@ Partial Class AbScores
         Me.lblPoints = New System.Windows.Forms.Label()
         Me.btnSaveScores = New System.Windows.Forms.Button()
         Me.btnResetScores = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -227,11 +228,11 @@ Partial Class AbScores
         'RichTextBox1
         '
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Location = New System.Drawing.Point(46, 244)
+        Me.RichTextBox1.Location = New System.Drawing.Point(52, 244)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.RichTextBox1.Size = New System.Drawing.Size(124, 120)
+        Me.RichTextBox1.Size = New System.Drawing.Size(124, 98)
         Me.RichTextBox1.TabIndex = 23
         Me.RichTextBox1.Text = "Welcome to point buy! Spend points to improve your character's initial ability sc" &
     "ores. The higher the score, the more points it costs to improve, so choose wisel" &
@@ -302,17 +303,28 @@ Partial Class AbScores
         Me.btnResetScores.Text = "Star Over"
         Me.btnResetScores.UseVisualStyleBackColor = True
         '
+        'btnBack
+        '
+        Me.btnBack.Location = New System.Drawing.Point(59, 399)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(117, 23)
+        Me.btnBack.TabIndex = 28
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'AbScores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(237, 412)
+        Me.ClientSize = New System.Drawing.Size(237, 452)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnResetScores)
         Me.Controls.Add(Me.btnSaveScores)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Name = "AbScores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Buy Ability Scores"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
@@ -345,4 +357,5 @@ Partial Class AbScores
     Friend WithEvents lblPoints As Label
     Friend WithEvents btnSaveScores As Button
     Friend WithEvents btnResetScores As Button
+    Friend WithEvents btnBack As Button
 End Class

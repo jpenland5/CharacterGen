@@ -50,7 +50,7 @@ Partial Class Initial
         Me.btnRace = New System.Windows.Forms.Button()
         Me.lblRace = New System.Windows.Forms.Label()
         Me.lblClass = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblAlign = New System.Windows.Forms.Label()
         Me.btnAlign = New System.Windows.Forms.Button()
         Me.lblGender = New System.Windows.Forms.Label()
         Me.btnGender = New System.Windows.Forms.Button()
@@ -78,7 +78,7 @@ Partial Class Initial
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(14, 391)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(280, 120)
+        Me.RichTextBox1.Size = New System.Drawing.Size(301, 120)
         Me.RichTextBox1.TabIndex = 2
         Me.RichTextBox1.Text = ""
         '
@@ -174,7 +174,7 @@ Partial Class Initial
         '
         'btnScores
         '
-        Me.btnScores.Location = New System.Drawing.Point(165, 186)
+        Me.btnScores.Location = New System.Drawing.Point(178, 186)
         Me.btnScores.Name = "btnScores"
         Me.btnScores.Size = New System.Drawing.Size(129, 23)
         Me.btnScores.TabIndex = 5
@@ -186,7 +186,7 @@ Partial Class Initial
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ViewToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(304, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(327, 24)
         Me.MenuStrip1.TabIndex = 6
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -243,7 +243,7 @@ Partial Class Initial
         '
         'btnSkills
         '
-        Me.btnSkills.Location = New System.Drawing.Point(165, 244)
+        Me.btnSkills.Location = New System.Drawing.Point(178, 244)
         Me.btnSkills.Name = "btnSkills"
         Me.btnSkills.Size = New System.Drawing.Size(129, 23)
         Me.btnSkills.TabIndex = 7
@@ -252,7 +252,7 @@ Partial Class Initial
         '
         'btnFeats
         '
-        Me.btnFeats.Location = New System.Drawing.Point(165, 215)
+        Me.btnFeats.Location = New System.Drawing.Point(178, 215)
         Me.btnFeats.Name = "btnFeats"
         Me.btnFeats.Size = New System.Drawing.Size(129, 23)
         Me.btnFeats.TabIndex = 8
@@ -262,7 +262,7 @@ Partial Class Initial
         'btnSave
         '
         Me.btnSave.Enabled = False
-        Me.btnSave.Location = New System.Drawing.Point(165, 273)
+        Me.btnSave.Location = New System.Drawing.Point(178, 273)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(129, 23)
         Me.btnSave.TabIndex = 9
@@ -271,7 +271,7 @@ Partial Class Initial
         '
         'btnClass
         '
-        Me.btnClass.Location = New System.Drawing.Point(165, 128)
+        Me.btnClass.Location = New System.Drawing.Point(178, 128)
         Me.btnClass.Name = "btnClass"
         Me.btnClass.Size = New System.Drawing.Size(129, 23)
         Me.btnClass.TabIndex = 10
@@ -280,7 +280,7 @@ Partial Class Initial
         '
         'btnRace
         '
-        Me.btnRace.Location = New System.Drawing.Point(165, 70)
+        Me.btnRace.Location = New System.Drawing.Point(178, 70)
         Me.btnRace.Name = "btnRace"
         Me.btnRace.Size = New System.Drawing.Size(129, 23)
         Me.btnRace.TabIndex = 11
@@ -293,7 +293,7 @@ Partial Class Initial
         Me.lblRace.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblRace.Location = New System.Drawing.Point(21, 71)
         Me.lblRace.Name = "lblRace"
-        Me.lblRace.Size = New System.Drawing.Size(118, 20)
+        Me.lblRace.Size = New System.Drawing.Size(141, 20)
         Me.lblRace.TabIndex = 7
         Me.lblRace.Text = "Race: "
         Me.lblRace.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -304,25 +304,25 @@ Partial Class Initial
         Me.lblClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblClass.Location = New System.Drawing.Point(21, 129)
         Me.lblClass.Name = "lblClass"
-        Me.lblClass.Size = New System.Drawing.Size(118, 20)
+        Me.lblClass.Size = New System.Drawing.Size(141, 20)
         Me.lblClass.TabIndex = 12
         Me.lblClass.Text = "Class: "
         Me.lblClass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label3
+        'lblAlign
         '
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label3.Location = New System.Drawing.Point(21, 158)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(118, 20)
-        Me.Label3.TabIndex = 13
-        Me.Label3.Text = "Alignment: "
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblAlign.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblAlign.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblAlign.Location = New System.Drawing.Point(21, 158)
+        Me.lblAlign.Name = "lblAlign"
+        Me.lblAlign.Size = New System.Drawing.Size(141, 20)
+        Me.lblAlign.TabIndex = 13
+        Me.lblAlign.Text = "Alignment: "
+        Me.lblAlign.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnAlign
         '
-        Me.btnAlign.Location = New System.Drawing.Point(165, 157)
+        Me.btnAlign.Location = New System.Drawing.Point(178, 157)
         Me.btnAlign.Name = "btnAlign"
         Me.btnAlign.Size = New System.Drawing.Size(129, 23)
         Me.btnAlign.TabIndex = 14
@@ -335,14 +335,14 @@ Partial Class Initial
         Me.lblGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblGender.Location = New System.Drawing.Point(21, 100)
         Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(118, 20)
+        Me.lblGender.Size = New System.Drawing.Size(141, 20)
         Me.lblGender.TabIndex = 15
         Me.lblGender.Text = "Gender: "
         Me.lblGender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnGender
         '
-        Me.btnGender.Location = New System.Drawing.Point(165, 99)
+        Me.btnGender.Location = New System.Drawing.Point(178, 99)
         Me.btnGender.Name = "btnGender"
         Me.btnGender.Size = New System.Drawing.Size(129, 23)
         Me.btnGender.TabIndex = 16
@@ -353,11 +353,11 @@ Partial Class Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(304, 523)
+        Me.ClientSize = New System.Drawing.Size(327, 523)
         Me.Controls.Add(Me.btnGender)
         Me.Controls.Add(Me.lblGender)
         Me.Controls.Add(Me.btnAlign)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblAlign)
         Me.Controls.Add(Me.lblClass)
         Me.Controls.Add(Me.lblRace)
         Me.Controls.Add(Me.btnRace)
@@ -374,6 +374,7 @@ Partial Class Initial
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Initial"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "D&D 3rd Ed Character Creator"
         Me.GroupBox1.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
@@ -411,7 +412,7 @@ Partial Class Initial
     Friend WithEvents btnRace As Button
     Friend WithEvents lblRace As Label
     Friend WithEvents lblClass As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblAlign As Label
     Friend WithEvents btnAlign As Button
     Friend WithEvents lblGender As Label
     Friend WithEvents btnGender As Button

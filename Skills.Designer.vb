@@ -86,7 +86,7 @@ Partial Class Skills
         Me.lblSkillPoints.Name = "lblSkillPoints"
         Me.lblSkillPoints.Size = New System.Drawing.Size(91, 25)
         Me.lblSkillPoints.TabIndex = 0
-        Me.lblSkillPoints.Text = "8"
+        Me.lblSkillPoints.Text = "0"
         Me.lblSkillPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblAppraise
@@ -290,6 +290,7 @@ Partial Class Skills
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.rtbSkillInfo)
         Me.Name = "Skills"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Skills"
         Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)

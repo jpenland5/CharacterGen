@@ -158,6 +158,9 @@
         Initial.lblWIS.Text = "Wisdom: " & 8 + Initial.RaceMod.Item(5)
         Initial.lblCHA.Text = "Charisma: " & 8 + Initial.RaceMod.Item(6)
 
+        'Enables the button for the next step
+        Initial.btnGender.Enabled = True
+
         'Closes the form
         Me.Close()
 

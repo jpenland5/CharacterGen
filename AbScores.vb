@@ -8,36 +8,39 @@
     Public mCHA As Integer = 8
     Public mPoints As Integer = 25
 
-    Public AbilityScores As New Dictionary(Of String, Integer)
+    'Public AbilityScores As New Dictionary(Of String, Integer)
 
     Private Sub AbScores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
             RichTextBox1.SelectionAlignment = HorizontalAlignment.Center
         End Sub
 
-        Private Sub btnSTRUp_Click(sender As Object, e As EventArgs) Handles btnSTRUp.Click
-            If mSTR < 14 And mPoints >= 1 Then
-                mSTR += 1
-                mPoints -= 1
-                lblSTR.Text = "Strength: " & mSTR.ToString
-                lblPoints.Text = mPoints.ToString
-            ElseIf mSTR >= 14 And mSTR < 16 And mPoints >= 2 Then
-                mSTR += 1
-                mPoints -= 2
-                lblSTR.Text = "Strength: " & mSTR.ToString
-                lblPoints.Text = mPoints.ToString
-            ElseIf mSTR >= 16 And mSTR < 18 And mPoints >= 3 Then
-                mSTR += 1
-                mPoints -= 3
-                lblSTR.Text = "Strength: " & mSTR.ToString
-                lblPoints.Text = mPoints.ToString
-            ElseIf mSTR = 18 Then
-                MessageBox.Show("You can't increase a score past 18 at character creation!")
-            Else
-                MessageBox.Show("You don't have enough points left to increase this score!")
-            End If
-        End Sub
+    Private Sub btnSTRUp_Click(sender As Object, e As EventArgs) Handles btnSTRUp.Click
+        'Determines whether player has sufficient points to modify the ability score, then modifies the value appropriately
+        If mSTR < 14 And mPoints >= 1 Then
+            mSTR += 1
+            mPoints -= 1
+            lblSTR.Text = "Strength: " & mSTR.ToString
+            lblPoints.Text = mPoints.ToString
+        ElseIf mSTR >= 14 And mSTR < 16 And mPoints >= 2 Then
+            mSTR += 1
+            mPoints -= 2
+            lblSTR.Text = "Strength: " & mSTR.ToString
+            lblPoints.Text = mPoints.ToString
+        ElseIf mSTR >= 16 And mSTR < 18 And mPoints >= 3 Then
+            mSTR += 1
+            mPoints -= 3
+            lblSTR.Text = "Strength: " & mSTR.ToString
+            lblPoints.Text = mPoints.ToString
+        ElseIf mSTR = 18 Then
+            'Displays an error if the ability score is already at maximum and the player attempts to increase it
+            MessageBox.Show("You can't increase a score past 18 at character creation!")
+        Else
+            'Displays an error if the player doesn't have enough buy points to increase the ability score
+            MessageBox.Show("You don't have enough points left to increase this score!")
+        End If
+    End Sub
 
-        Private Sub btnSTRDown_Click(sender As Object, e As EventArgs) Handles btnSTRDown.Click
+    Private Sub btnSTRDown_Click(sender As Object, e As EventArgs) Handles btnSTRDown.Click
             If mSTR = 8 Then
                 MessageBox.Show("You can't decrease this score any further!")
             ElseIf mSTR <= 14 Then
@@ -278,43 +281,68 @@
             End If
         End Sub
 
-        Private Sub btnResetScores_Click(sender As Object, e As EventArgs) Handles btnResetScores.Click
-            mPoints = 25
-            mSTR = 8
-            mDEX = 8
-            mCON = 8
-            mINT = 8
-            mWIS = 8
-            mCHA = 8
-            lblSTR.Text = "Strength: " & mSTR.ToString
-            lblDEX.Text = "Dexterity: " & mSTR.ToString
-            lblCON.Text = "Constitution: " & mSTR.ToString
-            lblINT.Text = "Intelligence: " & mSTR.ToString
-            lblWIS.Text = "Wisdom: " & mSTR.ToString
-            lblCHA.Text = "Charisma: " & mCHA.ToString
-            lblPoints.Text = mPoints.ToString
-        End Sub
+    Private Sub btnResetScores_Click(sender As Object, e As EventArgs) Handles btnResetScores.Click
+
+        'Resets all fields to their initial values
+        mPoints = 25
+        mSTR = 8
+        mDEX = 8
+        mCON = 8
+        mINT = 8
+        mWIS = 8
+        mCHA = 8
+        lblSTR.Text = "Strength: " & mSTR.ToString
+        lblDEX.Text = "Dexterity: " & mSTR.ToString
+        lblCON.Text = "Constitution: " & mSTR.ToString
+        lblINT.Text = "Intelligence: " & mSTR.ToString
+        lblWIS.Text = "Wisdom: " & mSTR.ToString
+        lblCHA.Text = "Charisma: " & mCHA.ToString
+        lblPoints.Text = mPoints.ToString
+
+    End Sub
 
     Private Sub btnSaveScores_Click(sender As Object, e As EventArgs) Handles btnSaveScores.Click
+
+        'Checks that the player has spent all buy points
         If mPoints = 0 Then
-            AbilityScores.Add("STR", mSTR)
-            AbilityScores.Add("DEX", mDEX)
-            AbilityScores.Add("CON", mCON)
-            AbilityScores.Add("INT", mINT)
-            AbilityScores.Add("WIS", mWIS)
-            AbilityScores.Add("CHA", mCHA)
+
+            'Updates the ability scores dictionary with the appropriate values
+            Initial.AbScores.Add("STR", mSTR)
+            Initial.AbScores.Add("DEX", mDEX)
+            Initial.AbScores.Add("CON", mCON)
+            Initial.AbScores.Add("INT", mINT)
+            Initial.AbScores.Add("WIS", mWIS)
+            Initial.AbScores.Add("CHA", mCHA)
         Else
+
+            'Displays abn error if the players has not spent all buy points
             MessageBox.Show("Please spend all points before proceeding!")
             Exit Sub
         End If
+
+        'Enables the feat selection button on the main form
         Initial.btnFeats.Enabled = 1
+
+        'Sets the ability score labels on the main form to the appropriate values
         Initial.lblSTR.Text = "Strength: " & mSTR + Initial.RaceMod.Item(1)
         Initial.lblDEX.Text = "Dexterity: " & mDEX.ToString + Initial.RaceMod.Item(2)
         Initial.lblCON.Text = "Constitution: " & mCON.ToString + Initial.RaceMod.Item(3)
         Initial.lblINT.Text = "Intelligence: " & mINT.ToString + Initial.RaceMod.Item(4)
         Initial.lblWIS.Text = "Wisdom: " & mWIS.ToString + Initial.RaceMod.Item(5)
         Initial.lblCHA.Text = "Charisma: " & mCHA.ToString + Initial.RaceMod.Item(6)
+
+        'Enables the button for the next step
+        Initial.btnFeats.Enabled = True
+
+        'Closes the form
         Me.Close()
+
     End Sub
 
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+
+        'Closes the form
+        Me.Close()
+
+    End Sub
 End Class
