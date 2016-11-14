@@ -42,7 +42,7 @@ Partial Class Race
         Me.RichTextBox1.Location = New System.Drawing.Point(111, 13)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(257, 80)
+        Me.RichTextBox1.Size = New System.Drawing.Size(257, 63)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
@@ -112,10 +112,10 @@ Partial Class Race
         'rtbRaceDetail
         '
         Me.rtbRaceDetail.BackColor = System.Drawing.SystemColors.Control
-        Me.rtbRaceDetail.Location = New System.Drawing.Point(111, 88)
+        Me.rtbRaceDetail.Location = New System.Drawing.Point(111, 73)
         Me.rtbRaceDetail.Name = "rtbRaceDetail"
         Me.rtbRaceDetail.ReadOnly = True
-        Me.rtbRaceDetail.Size = New System.Drawing.Size(257, 269)
+        Me.rtbRaceDetail.Size = New System.Drawing.Size(257, 284)
         Me.rtbRaceDetail.TabIndex = 8
         Me.rtbRaceDetail.Text = ""
         '

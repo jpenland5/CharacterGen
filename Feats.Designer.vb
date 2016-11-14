@@ -22,7 +22,6 @@ Partial Class Feats
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.chkAlertness = New System.Windows.Forms.CheckBox()
         Me.chkAmbidex = New System.Windows.Forms.CheckBox()
         Me.chkArmorH = New System.Windows.Forms.CheckBox()
         Me.chkArmorM = New System.Windows.Forms.CheckBox()
@@ -33,17 +32,8 @@ Partial Class Feats
         Me.chkCleave = New System.Windows.Forms.CheckBox()
         Me.rtbFeatInfo = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.chkAlertness = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
-        '
-        'chkAlertness
-        '
-        Me.chkAlertness.AutoSize = True
-        Me.chkAlertness.Location = New System.Drawing.Point(13, 13)
-        Me.chkAlertness.Name = "chkAlertness"
-        Me.chkAlertness.Size = New System.Drawing.Size(15, 14)
-        Me.chkAlertness.TabIndex = 0
-        Me.chkAlertness.UseVisualStyleBackColor = True
         '
         'chkAmbidex
         '
@@ -148,21 +138,22 @@ Partial Class Feats
     "ts certain requirements. Click on a feat's name to display additional informatio" &
     "n."
         '
-        'Label1
+        'chkAlertness
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(35, 13)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 13)
-        Me.Label1.TabIndex = 11
-        Me.Label1.Text = "Alertness"
+        Me.chkAlertness.AutoSize = True
+        Me.chkAlertness.Location = New System.Drawing.Point(13, 13)
+        Me.chkAlertness.Name = "chkAlertness"
+        Me.chkAlertness.Size = New System.Drawing.Size(69, 17)
+        Me.chkAlertness.TabIndex = 11
+        Me.chkAlertness.Text = "Alertness"
+        Me.chkAlertness.UseVisualStyleBackColor = True
         '
         'Feats
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 228)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.chkAlertness)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.rtbFeatInfo)
         Me.Controls.Add(Me.chkCleave)
@@ -173,15 +164,12 @@ Partial Class Feats
         Me.Controls.Add(Me.chkArmorM)
         Me.Controls.Add(Me.chkArmorH)
         Me.Controls.Add(Me.chkAmbidex)
-        Me.Controls.Add(Me.chkAlertness)
         Me.Name = "Feats"
         Me.Text = "Feats"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents chkAlertness As CheckBox
     Friend WithEvents chkAmbidex As CheckBox
     Friend WithEvents chkArmorH As CheckBox
     Friend WithEvents chkArmorM As CheckBox
@@ -192,5 +180,5 @@ Partial Class Feats
     Friend WithEvents chkCleave As CheckBox
     Friend WithEvents rtbFeatInfo As RichTextBox
     Friend WithEvents RichTextBox2 As RichTextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents chkAlertness As CheckBox
 End Class

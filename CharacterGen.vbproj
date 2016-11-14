@@ -90,6 +90,12 @@
     <Compile Include="Feats.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Gender.Designer.vb">
+      <DependentUpon>Gender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Initial.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Feats.resx">
       <DependentUpon>Feats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gender.resx">
+      <DependentUpon>Gender.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Initial.resx">
       <DependentUpon>Initial.vb</DependentUpon>

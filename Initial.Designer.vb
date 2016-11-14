@@ -52,6 +52,8 @@ Partial Class Initial
         Me.lblClass = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnAlign = New System.Windows.Forms.Button()
+        Me.lblGender = New System.Windows.Forms.Label()
+        Me.btnGender = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -74,7 +76,7 @@ Partial Class Initial
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(14, 352)
+        Me.RichTextBox1.Location = New System.Drawing.Point(14, 391)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(280, 120)
         Me.RichTextBox1.TabIndex = 2
@@ -83,7 +85,7 @@ Partial Class Initial
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 333)
+        Me.Label2.Location = New System.Drawing.Point(18, 372)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 13)
         Me.Label2.TabIndex = 3
@@ -97,7 +99,7 @@ Partial Class Initial
         Me.GroupBox1.Controls.Add(Me.lblCON)
         Me.GroupBox1.Controls.Add(Me.lblDEX)
         Me.GroupBox1.Controls.Add(Me.lblSTR)
-        Me.GroupBox1.Location = New System.Drawing.Point(21, 157)
+        Me.GroupBox1.Location = New System.Drawing.Point(21, 186)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(118, 157)
         Me.GroupBox1.TabIndex = 4
@@ -172,7 +174,7 @@ Partial Class Initial
         '
         'btnScores
         '
-        Me.btnScores.Location = New System.Drawing.Point(165, 157)
+        Me.btnScores.Location = New System.Drawing.Point(165, 186)
         Me.btnScores.Name = "btnScores"
         Me.btnScores.Size = New System.Drawing.Size(129, 23)
         Me.btnScores.TabIndex = 5
@@ -241,7 +243,7 @@ Partial Class Initial
         '
         'btnSkills
         '
-        Me.btnSkills.Location = New System.Drawing.Point(165, 215)
+        Me.btnSkills.Location = New System.Drawing.Point(165, 244)
         Me.btnSkills.Name = "btnSkills"
         Me.btnSkills.Size = New System.Drawing.Size(129, 23)
         Me.btnSkills.TabIndex = 7
@@ -250,7 +252,7 @@ Partial Class Initial
         '
         'btnFeats
         '
-        Me.btnFeats.Location = New System.Drawing.Point(165, 186)
+        Me.btnFeats.Location = New System.Drawing.Point(165, 215)
         Me.btnFeats.Name = "btnFeats"
         Me.btnFeats.Size = New System.Drawing.Size(129, 23)
         Me.btnFeats.TabIndex = 8
@@ -260,7 +262,7 @@ Partial Class Initial
         'btnSave
         '
         Me.btnSave.Enabled = False
-        Me.btnSave.Location = New System.Drawing.Point(165, 244)
+        Me.btnSave.Location = New System.Drawing.Point(165, 273)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(129, 23)
         Me.btnSave.TabIndex = 9
@@ -269,7 +271,7 @@ Partial Class Initial
         '
         'btnClass
         '
-        Me.btnClass.Location = New System.Drawing.Point(165, 99)
+        Me.btnClass.Location = New System.Drawing.Point(165, 128)
         Me.btnClass.Name = "btnClass"
         Me.btnClass.Size = New System.Drawing.Size(129, 23)
         Me.btnClass.TabIndex = 10
@@ -300,7 +302,7 @@ Partial Class Initial
         '
         Me.lblClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblClass.Location = New System.Drawing.Point(21, 100)
+        Me.lblClass.Location = New System.Drawing.Point(21, 129)
         Me.lblClass.Name = "lblClass"
         Me.lblClass.Size = New System.Drawing.Size(118, 20)
         Me.lblClass.TabIndex = 12
@@ -311,7 +313,7 @@ Partial Class Initial
         '
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label3.Location = New System.Drawing.Point(21, 128)
+        Me.Label3.Location = New System.Drawing.Point(21, 158)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(118, 20)
         Me.Label3.TabIndex = 13
@@ -320,18 +322,40 @@ Partial Class Initial
         '
         'btnAlign
         '
-        Me.btnAlign.Location = New System.Drawing.Point(165, 128)
+        Me.btnAlign.Location = New System.Drawing.Point(165, 157)
         Me.btnAlign.Name = "btnAlign"
         Me.btnAlign.Size = New System.Drawing.Size(129, 23)
         Me.btnAlign.TabIndex = 14
         Me.btnAlign.Text = "Choose Alignment"
         Me.btnAlign.UseVisualStyleBackColor = True
         '
+        'lblGender
+        '
+        Me.lblGender.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblGender.Location = New System.Drawing.Point(21, 100)
+        Me.lblGender.Name = "lblGender"
+        Me.lblGender.Size = New System.Drawing.Size(118, 20)
+        Me.lblGender.TabIndex = 15
+        Me.lblGender.Text = "Gender: "
+        Me.lblGender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnGender
+        '
+        Me.btnGender.Location = New System.Drawing.Point(165, 99)
+        Me.btnGender.Name = "btnGender"
+        Me.btnGender.Size = New System.Drawing.Size(129, 23)
+        Me.btnGender.TabIndex = 16
+        Me.btnGender.Text = "Choose Gender"
+        Me.btnGender.UseVisualStyleBackColor = True
+        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(304, 484)
+        Me.ClientSize = New System.Drawing.Size(304, 523)
+        Me.Controls.Add(Me.btnGender)
+        Me.Controls.Add(Me.lblGender)
         Me.Controls.Add(Me.btnAlign)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lblClass)
@@ -389,4 +413,6 @@ Partial Class Initial
     Friend WithEvents lblClass As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents btnAlign As Button
+    Friend WithEvents lblGender As Label
+    Friend WithEvents btnGender As Button
 End Class

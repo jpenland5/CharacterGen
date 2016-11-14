@@ -28,9 +28,9 @@ Partial Class Skills
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblSkillPoints = New System.Windows.Forms.Label()
         Me.lblAppraise = New System.Windows.Forms.Label()
-        Me.btnSTRUp = New System.Windows.Forms.Button()
+        Me.btnAppraiseUp = New System.Windows.Forms.Button()
         Me.btnCHAUp = New System.Windows.Forms.Button()
-        Me.btnSTRDown = New System.Windows.Forms.Button()
+        Me.btnAppraiseDown = New System.Windows.Forms.Button()
         Me.btnWISUp = New System.Windows.Forms.Button()
         Me.lblBluff = New System.Windows.Forms.Label()
         Me.btnINTUp = New System.Windows.Forms.Button()
@@ -100,14 +100,14 @@ Partial Class Skills
         Me.lblAppraise.Text = "Appraise: 0"
         Me.lblAppraise.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'btnSTRUp
+        'btnAppraiseUp
         '
-        Me.btnSTRUp.Location = New System.Drawing.Point(142, 78)
-        Me.btnSTRUp.Name = "btnSTRUp"
-        Me.btnSTRUp.Size = New System.Drawing.Size(20, 20)
-        Me.btnSTRUp.TabIndex = 27
-        Me.btnSTRUp.Text = "+"
-        Me.btnSTRUp.UseVisualStyleBackColor = True
+        Me.btnAppraiseUp.Location = New System.Drawing.Point(142, 78)
+        Me.btnAppraiseUp.Name = "btnAppraiseUp"
+        Me.btnAppraiseUp.Size = New System.Drawing.Size(20, 20)
+        Me.btnAppraiseUp.TabIndex = 27
+        Me.btnAppraiseUp.Text = "+"
+        Me.btnAppraiseUp.UseVisualStyleBackColor = True
         '
         'btnCHAUp
         '
@@ -118,14 +118,14 @@ Partial Class Skills
         Me.btnCHAUp.Text = "+"
         Me.btnCHAUp.UseVisualStyleBackColor = True
         '
-        'btnSTRDown
+        'btnAppraiseDown
         '
-        Me.btnSTRDown.Location = New System.Drawing.Point(20, 78)
-        Me.btnSTRDown.Name = "btnSTRDown"
-        Me.btnSTRDown.Size = New System.Drawing.Size(20, 20)
-        Me.btnSTRDown.TabIndex = 28
-        Me.btnSTRDown.Text = "-"
-        Me.btnSTRDown.UseVisualStyleBackColor = True
+        Me.btnAppraiseDown.Location = New System.Drawing.Point(20, 78)
+        Me.btnAppraiseDown.Name = "btnAppraiseDown"
+        Me.btnAppraiseDown.Size = New System.Drawing.Size(20, 20)
+        Me.btnAppraiseDown.TabIndex = 28
+        Me.btnAppraiseDown.Text = "-"
+        Me.btnAppraiseDown.UseVisualStyleBackColor = True
         '
         'btnWISUp
         '
@@ -269,9 +269,9 @@ Partial Class Skills
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(460, 354)
         Me.Controls.Add(Me.lblAppraise)
-        Me.Controls.Add(Me.btnSTRUp)
+        Me.Controls.Add(Me.btnAppraiseUp)
         Me.Controls.Add(Me.btnCHAUp)
-        Me.Controls.Add(Me.btnSTRDown)
+        Me.Controls.Add(Me.btnAppraiseDown)
         Me.Controls.Add(Me.btnWISUp)
         Me.Controls.Add(Me.lblBluff)
         Me.Controls.Add(Me.btnINTUp)
@@ -300,9 +300,9 @@ Partial Class Skills
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents lblSkillPoints As Label
     Friend WithEvents lblAppraise As Label
-    Friend WithEvents btnSTRUp As Button
+    Friend WithEvents btnAppraiseUp As Button
     Friend WithEvents btnCHAUp As Button
-    Friend WithEvents btnSTRDown As Button
+    Friend WithEvents btnAppraiseDown As Button
     Friend WithEvents btnWISUp As Button
     Friend WithEvents lblBluff As Label
     Friend WithEvents btnINTUp As Button
