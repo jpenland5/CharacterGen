@@ -9,6 +9,9 @@
     'Creates dictionary for tracking skill points
     Public Skills As New Dictionary(Of String, Integer)
 
+    'Creates a variable for tracking the chosen class
+    Public mClass As Integer
+
     Public mAlignment As String
 
     Public mClassSkillMod As Integer = 4

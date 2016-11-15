@@ -53,7 +53,7 @@
 
     Private Sub btnPal_Click(sender As Object, e As EventArgs) Handles btnPal.Click
         'Updates the class details to reflect the chosen class
-        rtbClassDetail.Text = "Paladin" & vbCrLf & "Hit die: d10" & vbCrLf & "Alignment: Lawful Good" & vbCrLf & "Proficiencies: armor (light, medium, heavy), shields, weapons (simple, martial)" & vbCrLf & "Skill points: 2 + int modifier ( (2 + int modifier) * 4 at 1st level)" & vbCrLf & "Base attack bonus: +1/level" & vbCrLf & "Spellcasting: Divine, Wisdom-based" & vbCrLf & "Paladins are the greatest force of goodness the realms have ever known. Warriors tirelessely dedicated to the destruction of evil, a Paladin is what happens when you infuse a Fighter with a Cleric's divine gift. While not as skilled martially as the Fighter nor capable of as many Godly miracles as the Cleric, the Paladin is nonetheless a force to be reckoned with. He specializes in striking down those who do harm to the good folk of the land, with the unique ability to Smite Evil and bring down divine wrath upon those he judges. Paladins can also render aid and heal others through a simple touch by Laying on Hands and casting a limited selection of spells similar to those used by the Cleric."
+        rtbClassDetail.Text = "Paladin" & vbCrLf & "Hit die: d10" & vbCrLf & "Alignment: Lawful Good" & vbCrLf & "Proficiencies: armor (light, medium, heavy), shields, weapons (simple, martial)" & vbCrLf & "Skill points: 2 + int modifier ( (2 + int modifier) * 4 at 1st level)" & vbCrLf & "Base attack bonus: +1/level" & vbCrLf & "Spellcasting: Divine, Wisdom-based" & vbCrLf & "Paladins are the greatest force of goodness the realms have ever known. Warriors tirelessely dedicated to the destruction of evil, a Paladin is what happens when you infuse a Fighter with a Cleric's divine gift. While not as skilled martially as the Fighter nor capable of as many Godly miracles as the Cleric, the Paladin is nonetheless a force to be reckoned with. He specializes in striking down those who do harm to the good folk of the land, with the unique ability to Smite Evil and bring down divine wrath upon those he judges. Paladins can also render aid and heal others through a simple touch by Laying on Hands and casting a limited selection of spells similar to those used by the Cleric. Paladins must exercise caution; a Paladin who engages in activity that results in shifting to any alignment besides Lawful Good will become a Fallen Paladin and lose accesss to all of his abilities!"
 
         'Updates the class tracker variable to reflect the chosen class
         mClass = 7
@@ -67,12 +67,37 @@
         mClass = 8
     End Sub
 
+
+
+    Private Sub btnRogue_Click(sender As Object, e As EventArgs) Handles btnRogue.Click
+        'Updates the class details to reflect the chosen class
+        rtbClassDetail.Text = "Rogue" & vbCrLf & "Hit die: d6" & vbCrLf & "Alignment: Any" & vbCrLf & "Proficiencies: armor (light), shields, weapons (rogue)" & vbCrLf & "Skill points: 8 + int modifier ( (8 + int modifier) * 4 at 1st level)" & vbCrLf & "Base attack bonus: +3/4 levels" & vbCrLf & "Rogues are sneaks, cutpurses, and ne'er-do-wells who skulk among the common folk in search of loose pockets and unguarded valuables. In many ways the urban cousin on the Ranger, the Rogue is most at home in the big city where he can stick to the shadows with ease. Some Rogues are smooth-talking con-men, some are professional thieves, and yet others are loners who cheat and steal only for themselves. The most nefarious among their number are assassins-for-hire, for all Rogues possess the innate ability to Backstab unwary targets from the shadows for a great deal of additional damage. Being streetwise has also taught the Rogue many tricks, granting him more Skill points than any other class and even the ability to 'fake it' using magical items such as wands that are normally reserved for the more magically inclined."
+
+        'Updates the class tracker variable to reflect the chosen class
+        mClass = 9
+    End Sub
+
+    Private Sub btnSorc_Click(sender As Object, e As EventArgs) Handles btnSorc.Click
+        'Updates the class details to reflect the chosen class
+        rtbClassDetail.Text = "Sorcerer" & vbCrLf & "Hit die: d4" & vbCrLf & "Alignment: Any" & vbCrLf & "Proficiencies: armor (robes), weapons (simple)" & vbCrLf & "Skill points: 2 + int modifier ( (2 + int modifier) * 4 at 1st level)" & vbCrLf & "Base attack bonus: +1/2 levels" & vbCrLf & "Spellcasting: Arcane, Charisma-based" & vbCrLf & "Unique among the magically inclined, Sorcerers are naturals at their craft. Capable of mighty feats of arcane power with neither study nor training, they can bend the forces of magic at a whim through raw talent. A Sorcerer's skill at magic is based on his Charisma rather than Intelligence, reflecting the fact that he casts spells by sheer force of will rather than learned knowledge. Few Sorcerers ever engage in actual study of the arcane, finding it rather unnecessary. Some say that their powerful, innate magical talents are due to having draconic lineage long in the past. Sorcerers need not memorize spells beforehand and can cast more spells in a day than Wizards, but they know only a fraction of the number of spells; his repertoire is much less flexible than a knowledgable Wizard's, and opportunities to learn additional spells are few and far between."
+
+        'Updates the class tracker variable to reflect the chosen class
+        mClass = 10
+    End Sub
+
+    Private Sub btnWiz_Click(sender As Object, e As EventArgs) Handles btnWiz.Click
+        'Updates the class details to reflect the chosen class
+        rtbClassDetail.Text = "Wizard" & vbCrLf & "Hit die: d4" & vbCrLf & "Alignment: Any" & vbCrLf & "Proficiencies: armor (robes), weapons (wizard)" & vbCrLf & "Skill points: 2 + int modifier ( (2 + int modifier) * 4 at 1st level)" & vbCrLf & "Base attack bonus: +1/2 levels" & vbCrLf & "Spellcasting: Arcane, Intelligence-based" & vbCrLf & "Wizards are the scolars of the realms, delving ever-deeper into the mysteries that surround the known cosmos. Their mastery of the arcane is rivaled only by the Sorcerer, though the two derive their abilities from different sources. A Wizard has spent many years in study and practice to obtain his power, with a deep understanding of the ebb and flow of magical energy which allows him to weave potent spells to protect his allies and devastate his foes. A Wizard has knowledge of more spells at a single time than a Sorcerer, but must pick and choose which spells to memorize for the day; he cannot use spells he has not memorized beforehand, and can only memorized a limited number. Wizards can easily add additional spells to their repertoire by reading scrolls, giving them ever-expanding options."
+
+        'Updates the class tracker variable to reflect the chosen class
+        mClass = 11
+    End Sub
+
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
 
         'Clears the class selection and closes the form
         mClass = Nothing
         Me.Close()
-
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -93,11 +118,21 @@
             Initial.lblClass.Text = "Class: Monk"
         ElseIf mClass = 7 Then
             Initial.lblClass.Text = "Class: Paladin"
+        ElseIf mClass = 8 Then
+            Initial.lblClass.Text = "Class: Ranger"
+        ElseIf mClass = 9 Then
+            Initial.lblClass.Text = "Class: Rogue"
+        ElseIf mClass = 10 Then
+            Initial.lblClass.Text = "Class: Sorcerer"
+        ElseIf mClass = 11 Then
+            Initial.lblClass.Text = "Class: Wizard"
         Else
             'Displays an error if no class is selected
             MessageBox.Show("Please select a class before continuing!")
             Exit Sub
         End If
+
+        Initial.mClass = mClass
 
         'Enables the button for the next step
         Initial.btnAlign.Enabled = True
@@ -106,5 +141,6 @@
         Me.Close()
 
     End Sub
+
 
 End Class

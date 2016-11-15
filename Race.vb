@@ -21,12 +21,12 @@
         mRace = 1
 
         'Updates the ability score modifiers as relevant to the selected race
-        'Initial.RaceMod("1") = 0
-        'Initial.RaceMod("2") = 0
-        'Initial.RaceMod("3") = 0
-        'Initial.RaceMod("4") = 0
-        'Initial.RaceMod("5") = 0
-        'Initial.RaceMod("6") = 0
+        Initial.RaceMod("1") = 0
+        Initial.RaceMod("2") = 0
+        Initial.RaceMod("3") = 0
+        Initial.RaceMod("4") = 0
+        Initial.RaceMod("5") = 0
+        Initial.RaceMod("6") = 0
     End Sub
 
     Private Sub btnDwarf_Click(sender As Object, e As EventArgs) Handles btnDwarf.Click
@@ -37,11 +37,11 @@
         mRace = 2
 
         'Updates the ability score modifiers as relevant to the selected race
-        'Initial.RaceMod("1") = 0
-        'Initial.RaceMod("2") = 0
+        Initial.RaceMod("1") = 0
+        Initial.RaceMod("2") = 0
         Initial.RaceMod("3") = 2
-        'Initial.RaceMod("4") = 0
-        'Initial.RaceMod("5") = 0
+        Initial.RaceMod("4") = 0
+        Initial.RaceMod("5") = 0
         Initial.RaceMod("6") = -2
 
     End Sub
@@ -54,12 +54,12 @@
         mRace = 3
 
         'Updates the ability score modifiers as relevant to the selected race
-        'Initial.RaceMod("1") = 0
+        Initial.RaceMod("1") = 0
         Initial.RaceMod("2") = 2
         Initial.RaceMod("3") = -2
-        'Initial.RaceMod("4") = 0
-        'Initial.RaceMod("5") = 0
-        'Initial.RaceMod("6") = 0
+        Initial.RaceMod("4") = 0
+        Initial.RaceMod("5") = 0
+        Initial.RaceMod("6") = 0
 
     End Sub
 
@@ -72,11 +72,11 @@
 
         'Updates the ability score modifiers as relevant to the selected race
         Initial.RaceMod("1") = -2
-        'Initial.RaceMod("2") = 0
+        Initial.RaceMod("2") = 0
         Initial.RaceMod("3") = 2
-        'Initial.RaceMod("4") = 0
-        'Initial.RaceMod("5") = 0
-        'Initial.RaceMod("6") = 0
+        Initial.RaceMod("4") = 0
+        Initial.RaceMod("5") = 0
+        Initial.RaceMod("6") = 0
     End Sub
 
     Private Sub btnOrc_Click(sender As Object, e As EventArgs) Handles btnOrc.Click
@@ -88,10 +88,10 @@
 
         'Updates the ability score modifiers as relevant to the selected race
         Initial.RaceMod("1") = 2
-        'Initial.RaceMod("2") = 0
-        'Initial.RaceMod("3") = 0
+        Initial.RaceMod("2") = 0
+        Initial.RaceMod("3") = 0
         Initial.RaceMod("4") = -2
-        'Initial.RaceMod("5") = 0
+        Initial.RaceMod("5") = 0
         Initial.RaceMod("6") = -2
     End Sub
 
@@ -105,10 +105,10 @@
         'Updates the ability score modifiers as relevant to the selected race
         Initial.RaceMod("1") = -2
         Initial.RaceMod("2") = 2
-        'Initial.RaceMod("3") = 0
-        'Initial.RaceMod("4") = 0
-        'Initial.RaceMod("5") = 0
-        'Initial.RaceMod("6") = 0
+        Initial.RaceMod("3") = 0
+        Initial.RaceMod("4") = 0
+        Initial.RaceMod("5") = 0
+        Initial.RaceMod("6") = 0
     End Sub
 
     Private Sub btnElf2_Click(sender As Object, e As EventArgs) Handles btnElf2.Click
@@ -119,12 +119,12 @@
         mRace = 7
 
         'Updates the ability score modifiers as relevant to the selected race
-        'Initial.RaceMod("1") = 0
-        'Initial.RaceMod("2") = 0
-        'Initial.RaceMod("3") = 0
-        'Initial.RaceMod("4") = 0
-        'Initial.RaceMod("5") = 0
-        'Initial.RaceMod("6") = 0
+        Initial.RaceMod("1") = 0
+        Initial.RaceMod("2") = 0
+        Initial.RaceMod("3") = 0
+        Initial.RaceMod("4") = 0
+        Initial.RaceMod("5") = 0
+        Initial.RaceMod("6") = 0
     End Sub
 
     Private Sub btnSaveRace_Click(sender As Object, e As EventArgs) Handles btnSaveRace.Click

@@ -71,4 +71,36 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Alignment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        If Initial.mClass = 1 Or Initial.mClass = 2 Then
+
+            btnLawG.Enabled = False
+            btnLawN.Enabled = False
+            btnLawE.Enabled = False
+        ElseIf Initial.mClass = 4 Then
+            btnLawG.Enabled = False
+            btnChaG.Enabled = False
+            btnLawE.Enabled = False
+            btnChaE.Enabled = False
+        ElseIf Initial.mclass = 6 Then
+            btnNeuG.Enabled = False
+            btnChaG.Enabled = False
+            btnTruN.Enabled = False
+            btnChaN.Enabled = False
+            btnNeuE.Enabled = False
+            btnChaE.Enabled = False
+        ElseIf Initial.mClass = 7 Then
+            btnNeuG.Enabled = False
+            btnChaG.Enabled = False
+            btnLawN.Enabled = False
+            btnTruN.Enabled = False
+            btnChaN.Enabled = False
+            btnLawE.Enabled = False
+            btnNeuE.Enabled = False
+            btnChaE.Enabled = False
+        End If
+
+    End Sub
 End Class
