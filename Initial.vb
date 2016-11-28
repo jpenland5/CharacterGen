@@ -18,6 +18,14 @@
 
     Private Sub btnScores_Click(sender As Object, e As EventArgs) Handles btnScores.Click
 
+        'Removes any current ability scores stored in the dictionary
+        AbScores.Remove("STR")
+        AbScores.Remove("DEX")
+        AbScores.Remove("CON")
+        AbScores.Remove("INT")
+        AbScores.Remove("WIS")
+        AbScores.Remove("CHA")
+
         'Resets all ability scores to default values
         lblSTR.Text = "Strength: 8"
         lblDEX.Text = "Dexterity: 8"

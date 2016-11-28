@@ -131,6 +131,7 @@
     <Compile Include="Race.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SkillFunc.vb" />
     <Compile Include="Skills.Designer.vb">
       <DependentUpon>Skills.vb</DependentUpon>
     </Compile>
