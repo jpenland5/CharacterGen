@@ -1,5 +1,7 @@
 ﻿Public Class Initial
 
+    Public mRace As Integer
+
     'Creates dictionary for tracking racial ability score modifiers
     Public RaceMod As New Dictionary(Of Integer, Integer)
 
@@ -8,6 +10,9 @@
 
     'Creates dictionary for tracking skill points
     Public Skills As New Dictionary(Of String, Integer)
+
+    'Creates dictionary for tracking selected feats
+    Public Feats As New Dictionary(Of String, Integer)
 
     'Creates a variable for tracking the chosen class
     Public mClass As Integer
@@ -104,4 +109,7 @@
 
     End Sub
 
+    Private Sub Initial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
