@@ -22,9 +22,9 @@ Partial Class Initial
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.rtbBiography = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblCHA = New System.Windows.Forms.Label()
@@ -60,12 +60,12 @@ Partial Class Initial
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(62, 31)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txtName.Location = New System.Drawing.Point(62, 31)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(100, 20)
+        Me.txtName.TabIndex = 0
         '
         'Label1
         '
@@ -76,13 +76,13 @@ Partial Class Initial
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Name: "
         '
-        'RichTextBox1
+        'rtbBiography
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(14, 391)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(301, 120)
-        Me.RichTextBox1.TabIndex = 2
-        Me.RichTextBox1.Text = ""
+        Me.rtbBiography.Location = New System.Drawing.Point(14, 391)
+        Me.rtbBiography.Name = "rtbBiography"
+        Me.rtbBiography.Size = New System.Drawing.Size(301, 120)
+        Me.rtbBiography.TabIndex = 2
+        Me.rtbBiography.Text = ""
         '
         'Label2
         '
@@ -398,9 +398,9 @@ Partial Class Initial
         Me.Controls.Add(Me.btnScores)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.rtbBiography)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Initial"
@@ -414,9 +414,9 @@ Partial Class Initial
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents rtbBiography As RichTextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lblCHA As Label

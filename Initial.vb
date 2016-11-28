@@ -171,4 +171,13 @@
         End If
 
     End Sub
+
+    Private Sub btnReview_Click(sender As Object, e As EventArgs) Handles btnReview.Click
+
+        'Brings up the form for reviewing all character stats
+        Dim oReview As Review
+        oReview = New Review()
+        oReview.Show()
+
+    End Sub
 End Class

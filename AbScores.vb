@@ -161,18 +161,18 @@
             If mINT < 14 And mPoints >= 1 Then
                 mINT += 1
                 mPoints -= 1
-                lblINT.Text = "Intelligence: " & mINT.ToString
-                lblPoints.Text = mPoints.ToString
+            lblINT.Text = "Intelligence: " & (mINT + Initial.RaceMod("4")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mINT >= 14 And mINT < 16 And mPoints >= 2 Then
                 mINT += 1
                 mPoints -= 2
-                lblINT.Text = "Intelligence: " & mINT.ToString
-                lblPoints.Text = mPoints.ToString
+            lblINT.Text = "Intelligence: " & (mINT + Initial.RaceMod("4")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mINT >= 16 And mINT < 18 And mPoints >= 3 Then
                 mINT += 1
                 mPoints -= 3
-                lblINT.Text = "Intelligence: " & mINT.ToString
-                lblPoints.Text = mPoints.ToString
+            lblINT.Text = "Intelligence: " & (mINT + Initial.RaceMod("4")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mINT = 18 Then
                 MessageBox.Show("You can't increase a score past 18 at character creation!")
             Else
@@ -186,18 +186,18 @@
             ElseIf mINT <= 14 Then
                 mINT -= 1
                 mPoints += 1
-                lblINT.Text = "Intelligence: " & mINT.ToString
-                lblPoints.Text = mPoints.ToString
+            lblINT.Text = "Intelligence: " & (mINT + Initial.RaceMod("4")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mINT > 14 And mINT <= 16 Then
                 mINT -= 1
                 mPoints += 2
-                lblINT.Text = "Intelligence: " & mINT.ToString
-                lblPoints.Text = mPoints.ToString
+            lblINT.Text = "Intelligence: " & (mINT + Initial.RaceMod("4")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mINT > 16 And mINT <= 18 Then
                 mINT -= 1
                 mPoints += 3
-                lblINT.Text = "Intelligence: " & mINT.ToString
-                lblPoints.Text = mPoints.ToString
+            lblINT.Text = "Intelligence: " & (mINT + Initial.RaceMod("4")).ToString
+            lblPoints.Text = mPoints.ToString
             End If
         End Sub
 
@@ -205,18 +205,18 @@
             If mWIS < 14 And mPoints >= 1 Then
                 mWIS += 1
                 mPoints -= 1
-                lblWIS.Text = "Wisdom: " & mWIS.ToString
-                lblPoints.Text = mPoints.ToString
+            lblWIS.Text = "Wisdom: " & (mWIS + Initial.RaceMod("5")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mWIS >= 14 And mWIS < 16 And mPoints >= 2 Then
                 mWIS += 1
                 mPoints -= 2
-                lblWIS.Text = "Wisdom: " & mWIS.ToString
-                lblPoints.Text = mPoints.ToString
+            lblWIS.Text = "Wisdom: " & (mWIS + Initial.RaceMod("5")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mWIS >= 16 And mWIS < 18 And mPoints >= 3 Then
                 mWIS += 1
                 mPoints -= 3
-                lblWIS.Text = "Wisdom: " & mWIS.ToString
-                lblPoints.Text = mPoints.ToString
+            lblWIS.Text = "Wisdom: " & (mWIS + Initial.RaceMod("5")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mWIS = 18 Then
                 MessageBox.Show("You can't increase a score past 18 at character creation!")
             Else
@@ -230,18 +230,18 @@
             ElseIf mWIS <= 14 Then
                 mWIS -= 1
                 mPoints += 1
-                lblWIS.Text = "Wisdom: " & mWIS.ToString
-                lblPoints.Text = mPoints.ToString
+            lblWIS.Text = "Wisdom: " & (mWIS + Initial.RaceMod("5")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mWIS > 14 And mWIS <= 16 Then
                 mWIS -= 1
                 mPoints += 2
-                lblWIS.Text = "Wisdom: " & mWIS.ToString
-                lblPoints.Text = mPoints.ToString
+            lblWIS.Text = "Wisdom: " & (mWIS + Initial.RaceMod("5")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mWIS > 16 And mWIS <= 18 Then
                 mWIS -= 1
                 mPoints += 3
-                lblWIS.Text = "Wisdom: " & mWIS.ToString
-                lblPoints.Text = mPoints.ToString
+            lblWIS.Text = "Wisdom: " & (mWIS + Initial.RaceMod("5")).ToString
+            lblPoints.Text = mPoints.ToString
             End If
         End Sub
 
@@ -249,18 +249,18 @@
             If mCHA < 14 And mPoints >= 1 Then
                 mCHA += 1
                 mPoints -= 1
-                lblCHA.Text = "Charisma: " & mCHA.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCHA.Text = "Charisma: " & (mCHA + Initial.RaceMod("6")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCHA >= 14 And mCHA < 16 And mPoints >= 2 Then
                 mCHA += 1
                 mPoints -= 2
-                lblCHA.Text = "Charisma: " & mCHA.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCHA.Text = "Charisma: " & (mCHA + Initial.RaceMod("6")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCHA >= 16 And mCHA < 18 And mPoints >= 3 Then
                 mCHA += 1
                 mPoints -= 3
-                lblCHA.Text = "Charisma: " & mCHA.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCHA.Text = "Charisma: " & (mCHA + Initial.RaceMod("6")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCHA = 18 Then
                 MessageBox.Show("You can't increase a score past 18 at character creation!")
             Else
@@ -274,18 +274,18 @@
             ElseIf mCHA <= 14 Then
                 mCHA -= 1
                 mPoints += 1
-                lblCHA.Text = "Charisma: " & mCHA.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCHA.Text = "Charisma: " & (mCHA + Initial.RaceMod("6")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCHA > 14 And mCHA <= 16 Then
                 mCHA -= 1
                 mPoints += 2
-                lblCHA.Text = "Charisma: " & mCHA.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCHA.Text = "Charisma: " & (mCHA + Initial.RaceMod("6")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCHA > 16 And mCHA <= 18 Then
                 mCHA -= 1
                 mPoints += 3
-                lblCHA.Text = "Charisma: " & mCHA.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCHA.Text = "Charisma: " & (mCHA + Initial.RaceMod("6")).ToString
+            lblPoints.Text = mPoints.ToString
             End If
         End Sub
 
@@ -315,12 +315,12 @@
         If mPoints = 0 Then
 
             'Updates the ability scores dictionary with the appropriate values
-            Initial.AbScores.Add("STR", mSTR)
-            Initial.AbScores.Add("DEX", mDEX)
-            Initial.AbScores.Add("CON", mCON)
-            Initial.AbScores.Add("INT", mINT)
-            Initial.AbScores.Add("WIS", mWIS)
-            Initial.AbScores.Add("CHA", mCHA)
+            Initial.AbScores.Add("STR", (mSTR + Initial.RaceMod("1")))
+            Initial.AbScores.Add("DEX", (mDEX + Initial.RaceMod("2")))
+            Initial.AbScores.Add("CON", (mCON + Initial.RaceMod("3")))
+            Initial.AbScores.Add("INT", (mINT + Initial.RaceMod("4")))
+            Initial.AbScores.Add("WIS", (mWIS + Initial.RaceMod("5")))
+            Initial.AbScores.Add("CHA", (mCHA + Initial.RaceMod("6")))
         Else
 
             'Displays abn error if the players has not spent all buy points
@@ -329,18 +329,25 @@
         End If
 
         'Enables the feat selection button on the main form
-        Initial.btnFeats.Enabled = 1
+        Initial.btnFeats.Enabled = True
 
         'Disables the button for the current step
         Initial.btnScores.Enabled = False
 
-        'Sets the ability score labels on the main form to the appropriate values
-        Initial.lblSTR.Text = "Strength: " & mSTR + Initial.RaceMod.Item(1)
-        Initial.lblDEX.Text = "Dexterity: " & mDEX.ToString + Initial.RaceMod.Item(2)
-        Initial.lblCON.Text = "Constitution: " & mCON.ToString + Initial.RaceMod.Item(3)
-        Initial.lblINT.Text = "Intelligence: " & mINT.ToString + Initial.RaceMod.Item(4)
-        Initial.lblWIS.Text = "Wisdom: " & mWIS.ToString + Initial.RaceMod.Item(5)
-        Initial.lblCHA.Text = "Charisma: " & mCHA.ToString + Initial.RaceMod.Item(6)
+        ''Sets the ability score labels on the main form to the appropriate values
+        'Initial.lblSTR.Text = "Strength: " & mSTR + Initial.RaceMod("1")
+        'Initial.lblDEX.Text = "Dexterity: " & mDEX.ToString + Initial.RaceMod("2")
+        'Initial.lblCON.Text = "Constitution: " & mCON.ToString + Initial.RaceMod("3")
+        'Initial.lblINT.Text = "Intelligence: " & mINT.ToString + Initial.RaceMod("4")
+        'Initial.lblWIS.Text = "Wisdom: " & mWIS.ToString + Initial.RaceMod("5")
+        'Initial.lblCHA.Text = "Charisma: " & mCHA.ToString + Initial.RaceMod("6")
+
+        Initial.lblSTR.Text = "Strength: " & Initial.AbScores("STR")
+        Initial.lblDEX.Text = "Dexterity: " & Initial.AbScores("DEX")
+        Initial.lblCON.Text = "Constitution: " & Initial.AbScores("CON")
+        Initial.lblINT.Text = "Intelligence: " & Initial.AbScores("INT")
+        Initial.lblWIS.Text = "Wisdom: " & Initial.AbScores("WIS")
+        Initial.lblCHA.Text = "Charisma: " & Initial.AbScores("CHA")
 
         'Enables the button for the next step
         Initial.btnFeats.Enabled = True

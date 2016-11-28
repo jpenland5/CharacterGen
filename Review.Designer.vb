@@ -35,7 +35,7 @@ Partial Class Review
         Me.lblDEX = New System.Windows.Forms.Label()
         Me.lblSTR = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.rtbBiography = New System.Windows.Forms.RichTextBox()
         Me.lblName = New System.Windows.Forms.Label()
         Me.btnSkills = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -117,7 +117,7 @@ Partial Class Review
         Me.lblCHA.Name = "lblCHA"
         Me.lblCHA.Size = New System.Drawing.Size(90, 20)
         Me.lblCHA.TabIndex = 6
-        Me.lblCHA.Text = "Charisma: 8"
+        Me.lblCHA.Text = "Charisma: "
         Me.lblCHA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblWIS
@@ -128,7 +128,7 @@ Partial Class Review
         Me.lblWIS.Name = "lblWIS"
         Me.lblWIS.Size = New System.Drawing.Size(90, 20)
         Me.lblWIS.TabIndex = 5
-        Me.lblWIS.Text = "Wisdom: 8"
+        Me.lblWIS.Text = "Wisdom: "
         Me.lblWIS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblINT
@@ -139,7 +139,7 @@ Partial Class Review
         Me.lblINT.Name = "lblINT"
         Me.lblINT.Size = New System.Drawing.Size(90, 20)
         Me.lblINT.TabIndex = 3
-        Me.lblINT.Text = "Intelligence: 8"
+        Me.lblINT.Text = "Intelligence: "
         Me.lblINT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblCON
@@ -150,7 +150,7 @@ Partial Class Review
         Me.lblCON.Name = "lblCON"
         Me.lblCON.Size = New System.Drawing.Size(90, 20)
         Me.lblCON.TabIndex = 2
-        Me.lblCON.Text = "Constitution: 8"
+        Me.lblCON.Text = "Constitution: "
         Me.lblCON.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblDEX
@@ -161,7 +161,7 @@ Partial Class Review
         Me.lblDEX.Name = "lblDEX"
         Me.lblDEX.Size = New System.Drawing.Size(90, 20)
         Me.lblDEX.TabIndex = 1
-        Me.lblDEX.Text = "Dexterity: 8"
+        Me.lblDEX.Text = "Dexterity: "
         Me.lblDEX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblSTR
@@ -172,7 +172,7 @@ Partial Class Review
         Me.lblSTR.Name = "lblSTR"
         Me.lblSTR.Size = New System.Drawing.Size(90, 20)
         Me.lblSTR.TabIndex = 0
-        Me.lblSTR.Text = "Strength: 8"
+        Me.lblSTR.Text = "Strength: "
         Me.lblSTR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label2
@@ -184,14 +184,14 @@ Partial Class Review
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Biography: "
         '
-        'RichTextBox1
+        'rtbBiography
         '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox1.Location = New System.Drawing.Point(8, 352)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(301, 120)
-        Me.RichTextBox1.TabIndex = 21
-        Me.RichTextBox1.Text = ""
+        Me.rtbBiography.BackColor = System.Drawing.SystemColors.Control
+        Me.rtbBiography.Location = New System.Drawing.Point(8, 352)
+        Me.rtbBiography.Name = "rtbBiography"
+        Me.rtbBiography.Size = New System.Drawing.Size(301, 120)
+        Me.rtbBiography.TabIndex = 21
+        Me.rtbBiography.Text = ""
         '
         'lblName
         '
@@ -227,7 +227,7 @@ Partial Class Review
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.rtbBiography)
         Me.Name = "Review"
         Me.Text = "Character Review"
         Me.GroupBox1.ResumeLayout(False)
@@ -248,7 +248,7 @@ Partial Class Review
     Friend WithEvents lblDEX As Label
     Friend WithEvents lblSTR As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents rtbBiography As RichTextBox
     Friend WithEvents lblName As Label
     Friend WithEvents btnSkills As Button
 End Class
