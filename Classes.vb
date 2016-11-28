@@ -137,6 +137,9 @@
         'Enables the button for the next step
         Initial.btnAlign.Enabled = True
 
+        'Disables the button for the current step
+        Initial.btnClass.Enabled = False
+
         'Closes the form
         Me.Close()
 

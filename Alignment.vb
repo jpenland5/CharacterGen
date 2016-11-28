@@ -56,6 +56,9 @@
             'Enables the button for the next step
             Initial.btnScores.Enabled = True
 
+            'Disables the button for the current step
+            Initial.btnAlign.Enabled = False
+
             Me.Close()
         Else
             MessageBox.Show("Please select an alignment before continuing!")

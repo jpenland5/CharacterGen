@@ -22,7 +22,6 @@ Partial Class AbScores
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AbScores))
         Me.btnSTRUp = New System.Windows.Forms.Button()
         Me.btnSTRDown = New System.Windows.Forms.Button()
         Me.lblCHA = New System.Windows.Forms.Label()
@@ -233,9 +232,11 @@ Partial Class AbScores
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.RichTextBox1.Size = New System.Drawing.Size(213, 128)
+        Me.RichTextBox1.Size = New System.Drawing.Size(213, 70)
         Me.RichTextBox1.TabIndex = 23
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        Me.RichTextBox1.Text = "Welcome to point buy! Spend points to improve your character's initial ability sc" &
+    "ores. The higher the score, the more points it costs to improve, so choose wisel" &
+    "y!"
         '
         'GroupBox1
         '
@@ -286,7 +287,7 @@ Partial Class AbScores
         '
         'btnSaveScores
         '
-        Me.btnSaveScores.Location = New System.Drawing.Point(59, 378)
+        Me.btnSaveScores.Location = New System.Drawing.Point(59, 320)
         Me.btnSaveScores.Name = "btnSaveScores"
         Me.btnSaveScores.Size = New System.Drawing.Size(117, 23)
         Me.btnSaveScores.TabIndex = 26
@@ -295,7 +296,7 @@ Partial Class AbScores
         '
         'btnResetScores
         '
-        Me.btnResetScores.Location = New System.Drawing.Point(59, 407)
+        Me.btnResetScores.Location = New System.Drawing.Point(59, 349)
         Me.btnResetScores.Name = "btnResetScores"
         Me.btnResetScores.Size = New System.Drawing.Size(117, 23)
         Me.btnResetScores.TabIndex = 27
@@ -304,7 +305,7 @@ Partial Class AbScores
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(59, 436)
+        Me.btnBack.Location = New System.Drawing.Point(59, 378)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(117, 23)
         Me.btnBack.TabIndex = 28
@@ -315,7 +316,8 @@ Partial Class AbScores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(237, 475)
+        Me.ClientSize = New System.Drawing.Size(237, 416)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnResetScores)
         Me.Controls.Add(Me.btnSaveScores)

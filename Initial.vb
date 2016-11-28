@@ -24,20 +24,20 @@
     Private Sub btnScores_Click(sender As Object, e As EventArgs) Handles btnScores.Click
 
         'Removes any current ability scores stored in the dictionary
-        AbScores.Remove("STR")
-        AbScores.Remove("DEX")
-        AbScores.Remove("CON")
-        AbScores.Remove("INT")
-        AbScores.Remove("WIS")
-        AbScores.Remove("CHA")
+        'AbScores.Remove("STR")
+        'AbScores.Remove("DEX")
+        'AbScores.Remove("CON")
+        'AbScores.Remove("INT")
+        'AbScores.Remove("WIS")
+        'AbScores.Remove("CHA")
 
-        'Resets all ability scores to default values
-        lblSTR.Text = "Strength: 8"
-        lblDEX.Text = "Dexterity: 8"
-        lblCON.Text = "Constitution: 8"
-        lblINT.Text = "Intelligence: 8"
-        lblWIS.Text = "Wisdom: 8"
-        lblCHA.Text = "Charisma: 8"
+        ''Resets all ability scores to default values
+        'lblSTR.Text = "Strength: "
+        'lblDEX.Text = "Dexterity: "
+        'lblCON.Text = "Constitution: "
+        'lblINT.Text = "Intelligence: "
+        'lblWIS.Text = "Wisdom: "
+        'lblCHA.Text = "Charisma: "
 
         'Brings up the form for choosing new scores
         Dim oPointBuy As AbScores
@@ -65,14 +65,6 @@
     End Sub
 
     Private Sub btnRace_Click(sender As Object, e As EventArgs) Handles btnRace.Click
-
-        'Resets all ability scores to default values
-        lblSTR.Text = "Strength: 8"
-        lblDEX.Text = "Dexterity: 8"
-        lblCON.Text = "Constitution: 8"
-        lblINT.Text = "Intelligence: 8"
-        lblWIS.Text = "Wisdom: 8"
-        lblCHA.Text = "Charisma: 8"
 
         'Brings up the form for choosing a new player race
         Dim oRace As Race
@@ -110,6 +102,73 @@
     End Sub
 
     Private Sub Initial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+
+        'Disables the Gender button and reverts effects of race selection
+        If btnGender.Enabled = True Then
+            btnGender.Enabled = False
+            mRace = Nothing
+            RaceMod.Remove("1")
+            RaceMod.Remove("2")
+            RaceMod.Remove("3")
+            RaceMod.Remove("4")
+            RaceMod.Remove("5")
+            RaceMod.Remove("6")
+            lblRace.Text = "Race: "
+            btnRace.Enabled = True
+        ElseIf btnClass.Enabled = True Then
+            btnClass.Enabled = False
+            lblGender.Text = "Gender: "
+            btnGender.Enabled = True
+        ElseIf btnAlign.Enabled = True Then
+            btnAlign.Enabled = False
+            mClass = Nothing
+            lblClass.Text = "Class: "
+            btnClass.Enabled = True
+        ElseIf btnScores.Enabled = True Then
+            btnScores.Enabled = False
+            lblAlign.Text = "Alignment: "
+            btnAlign.Enabled = True
+        ElseIf btnFeats.Enabled = True Then
+            btnFeats.Enabled = False
+            AbScores.Remove("STR")
+            AbScores.Remove("DEX")
+            AbScores.Remove("CON")
+            AbScores.Remove("INT")
+            AbScores.Remove("WIS")
+            AbScores.Remove("CHA")
+            lblSTR.Text = "Strength: "
+            lblSTR.Text = "Strength: "
+            lblSTR.Text = "Strength: "
+            lblSTR.Text = "Strength: "
+            lblSTR.Text = "Strength: "
+            lblSTR.Text = "Strength: "
+            btnScores.Enabled = True
+        ElseIf btnSkills.Enabled = True Then
+            btnSkills.Enabled = False
+            Feats("Alertness") = 0
+            Feats("Ambidexterity") = 0
+            Feats("ArmorH") = 0
+            Feats("ArmorM") = 0
+            Feats("ArmorL") = 0
+            Feats("BlindFight") = 0
+            Feats("Blooded") = 0
+            Feats("PowerAttack") = 0
+            Feats("Cleave") = 0
+            btnFeats.Enabled = True
+        ElseIf btnReview.Enabled = True Then
+            btnReview.Enabled = False
+            Skills.Remove("Appraise")
+            Skills.Remove("Bluff")
+            Skills.Remove("Concentration")
+            Skills.Remove("Discipline")
+            Skills.Remove("Intimidate")
+            Skills.Remove("Parry")
+            btnSkills.Enabled = True
+        End If
 
     End Sub
 End Class

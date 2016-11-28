@@ -10,6 +10,9 @@
         'Enables the button for the next step
         Initial.btnClass.Enabled = True
 
+        'Disables the button for the current step
+        Initial.btnGender.Enabled = False
+
         'Closes the form
         Me.Close()
 
@@ -22,6 +25,9 @@
 
         'Enables the button for the next step
         Initial.btnClass.Enabled = True
+
+        'Disables the button for the current step
+        Initial.btnGender.Enabled = False
 
         'Closes the form
         Me.Close()

@@ -11,25 +11,33 @@
     'Public AbilityScores As New Dictionary(Of String, Integer)
 
     Private Sub AbScores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            RichTextBox1.SelectionAlignment = HorizontalAlignment.Center
-        End Sub
+        RichTextBox1.SelectionAlignment = HorizontalAlignment.Center
+
+        lblSTR.Text = "Strength: " & mSTR + Initial.RaceMod("1").ToString
+        lblDEX.Text = "Dexterity: " & mDEX + Initial.RaceMod("2").ToString
+        lblCON.Text = "Constitution: " & mCON + Initial.RaceMod("3").ToString
+        lblINT.Text = "Intelligence: " & mINT + Initial.RaceMod("4").ToString
+        lblWIS.Text = "Wisdom: " & mWIS + Initial.RaceMod("5").ToString
+        lblCHA.Text = "Charisma: " & mCHA + Initial.RaceMod("6").ToString
+
+    End Sub
 
     Private Sub btnSTRUp_Click(sender As Object, e As EventArgs) Handles btnSTRUp.Click
         'Determines whether player has sufficient points to modify the ability score, then modifies the value appropriately
         If mSTR < 14 And mPoints >= 1 Then
             mSTR += 1
             mPoints -= 1
-            lblSTR.Text = "Strength: " & mSTR.ToString
+            lblSTR.Text = "Strength: " & (mSTR + Initial.RaceMod("1")).ToString
             lblPoints.Text = mPoints.ToString
         ElseIf mSTR >= 14 And mSTR < 16 And mPoints >= 2 Then
             mSTR += 1
             mPoints -= 2
-            lblSTR.Text = "Strength: " & mSTR.ToString
+            lblSTR.Text = "Strength: " & (mSTR + Initial.RaceMod("1")).ToString
             lblPoints.Text = mPoints.ToString
         ElseIf mSTR >= 16 And mSTR < 18 And mPoints >= 3 Then
             mSTR += 1
             mPoints -= 3
-            lblSTR.Text = "Strength: " & mSTR.ToString
+            lblSTR.Text = "Strength: " & (mSTR + Initial.RaceMod("1")).ToString
             lblPoints.Text = mPoints.ToString
         ElseIf mSTR = 18 Then
             'Displays an error if the ability score is already at maximum and the player attempts to increase it
@@ -46,18 +54,18 @@
             ElseIf mSTR <= 14 Then
                 mSTR -= 1
                 mPoints += 1
-                lblSTR.Text = "Strength: " & mSTR.ToString
-                lblPoints.Text = mPoints.ToString
+            lblSTR.Text = "Strength: " & (mSTR + Initial.RaceMod("1")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mSTR > 14 And mSTR <= 16 Then
                 mSTR -= 1
                 mPoints += 2
-                lblSTR.Text = "Strength: " & mSTR.ToString
-                lblPoints.Text = mPoints.ToString
+            lblSTR.Text = "Strength: " & (mSTR + Initial.RaceMod("1")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mSTR > 16 And mSTR <= 18 Then
                 mSTR -= 1
                 mPoints += 3
-                lblSTR.Text = "Strength: " & mSTR.ToString
-                lblPoints.Text = mPoints.ToString
+            lblSTR.Text = "Strength: " & (mSTR + Initial.RaceMod("1")).ToString
+            lblPoints.Text = mPoints.ToString
             End If
         End Sub
 
@@ -65,18 +73,18 @@
             If mDEX < 14 And mPoints >= 1 Then
                 mDEX += 1
                 mPoints -= 1
-                lblDEX.Text = "Dexterity: " & mDEX.ToString
-                lblPoints.Text = mPoints.ToString
+            lblDEX.Text = "Dexterity: " & (mDEX + Initial.RaceMod("2")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mDEX >= 14 And mDEX < 16 And mPoints >= 2 Then
                 mDEX += 1
                 mPoints -= 2
-                lblDEX.Text = "Dexterity: " & mDEX.ToString
-                lblPoints.Text = mPoints.ToString
+            lblDEX.Text = "Dexterity: " & (mDEX + Initial.RaceMod("2")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mDEX >= 16 And mDEX < 18 And mPoints >= 3 Then
                 mDEX += 1
                 mPoints -= 3
-                lblDEX.Text = "Dexterity: " & mDEX.ToString
-                lblPoints.Text = mPoints.ToString
+            lblDEX.Text = "Dexterity: " & (mDEX + Initial.RaceMod("2")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mDEX = 18 Then
                 MessageBox.Show("You can't increase a score past 18 at character creation!")
             Else
@@ -90,18 +98,18 @@
             ElseIf mDEX <= 14 Then
                 mDEX -= 1
                 mPoints += 1
-                lblDEX.Text = "Dexterity: " & mDEX.ToString
-                lblPoints.Text = mPoints.ToString
+            lblDEX.Text = "Dexterity: " & (mDEX + Initial.RaceMod("2")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mDEX > 14 And mDEX <= 16 Then
                 mDEX -= 1
                 mPoints += 2
-                lblDEX.Text = "Dexterity: " & mDEX.ToString
-                lblPoints.Text = mPoints.ToString
+            lblDEX.Text = "Dexterity: " & (mDEX + Initial.RaceMod("2")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mDEX > 16 And mDEX <= 18 Then
                 mDEX -= 1
                 mPoints += 3
-                lblDEX.Text = "Dexterity: " & mDEX.ToString
-                lblPoints.Text = mPoints.ToString
+            lblDEX.Text = "Dexterity: " & (mDEX + Initial.RaceMod("2")).ToString
+            lblPoints.Text = mPoints.ToString
             End If
         End Sub
 
@@ -109,18 +117,18 @@
             If mCON < 14 And mPoints >= 1 Then
                 mCON += 1
                 mPoints -= 1
-                lblCON.Text = "Constitution: " & mCON.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCON.Text = "Constitution: " & (mCON + Initial.RaceMod("3")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCON >= 14 And mCON < 16 And mPoints >= 2 Then
                 mCON += 1
                 mPoints -= 2
-                lblCON.Text = "Constitution: " & mCON.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCON.Text = "Constitution: " & (mCON + Initial.RaceMod("3")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCON >= 16 And mCON < 18 And mPoints >= 3 Then
                 mCON += 1
                 mPoints -= 3
-                lblCON.Text = "Constitution: " & mCON.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCON.Text = "Constitution: " & (mCON + Initial.RaceMod("3")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCON = 18 Then
                 MessageBox.Show("You can't increase a score past 18 at character creation!")
             Else
@@ -134,18 +142,18 @@
             ElseIf mCON <= 14 Then
                 mCON -= 1
                 mPoints += 1
-                lblCON.Text = "Constitution: " & mCON.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCON.Text = "Constitution: " & (mCON + Initial.RaceMod("3")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCON > 14 And mCON <= 16 Then
                 mCON -= 1
                 mPoints += 2
-                lblCON.Text = "Constitution: " & mCON.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCON.Text = "Constitution: " & (mCON + Initial.RaceMod("3")).ToString
+            lblPoints.Text = mPoints.ToString
             ElseIf mCON > 16 And mCON <= 18 Then
                 mCON -= 1
                 mPoints += 3
-                lblCON.Text = "Constitution: " & mCON.ToString
-                lblPoints.Text = mPoints.ToString
+            lblCON.Text = "Constitution: " & (mCON + Initial.RaceMod("3")).ToString
+            lblPoints.Text = mPoints.ToString
             End If
         End Sub
 
@@ -323,6 +331,9 @@
         'Enables the feat selection button on the main form
         Initial.btnFeats.Enabled = 1
 
+        'Disables the button for the current step
+        Initial.btnScores.Enabled = False
+
         'Sets the ability score labels on the main form to the appropriate values
         Initial.lblSTR.Text = "Strength: " & mSTR + Initial.RaceMod.Item(1)
         Initial.lblDEX.Text = "Dexterity: " & mDEX.ToString + Initial.RaceMod.Item(2)
@@ -343,6 +354,10 @@
 
         'Closes the form
         Me.Close()
+
+    End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
 
     End Sub
 End Class

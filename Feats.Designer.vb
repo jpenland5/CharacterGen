@@ -294,6 +294,7 @@ Partial Class Feats
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 351)
+        Me.ControlBox = False
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.lblCleave)
@@ -318,6 +319,8 @@ Partial Class Feats
         Me.Controls.Add(Me.chkArmorM)
         Me.Controls.Add(Me.chkArmorH)
         Me.Controls.Add(Me.chkAmbidex)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Feats"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Feats"

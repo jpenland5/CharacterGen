@@ -54,6 +54,8 @@ Partial Class Initial
         Me.btnAlign = New System.Windows.Forms.Button()
         Me.lblGender = New System.Windows.Forms.Label()
         Me.btnGender = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnReview = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -114,7 +116,7 @@ Partial Class Initial
         Me.lblCHA.Name = "lblCHA"
         Me.lblCHA.Size = New System.Drawing.Size(90, 20)
         Me.lblCHA.TabIndex = 6
-        Me.lblCHA.Text = "Charisma: 8"
+        Me.lblCHA.Text = "Charisma: "
         Me.lblCHA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblWIS
@@ -125,7 +127,7 @@ Partial Class Initial
         Me.lblWIS.Name = "lblWIS"
         Me.lblWIS.Size = New System.Drawing.Size(90, 20)
         Me.lblWIS.TabIndex = 5
-        Me.lblWIS.Text = "Wisdom: 8"
+        Me.lblWIS.Text = "Wisdom: "
         Me.lblWIS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblINT
@@ -136,7 +138,7 @@ Partial Class Initial
         Me.lblINT.Name = "lblINT"
         Me.lblINT.Size = New System.Drawing.Size(90, 20)
         Me.lblINT.TabIndex = 3
-        Me.lblINT.Text = "Intelligence: 8"
+        Me.lblINT.Text = "Intelligence: "
         Me.lblINT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblCON
@@ -147,7 +149,7 @@ Partial Class Initial
         Me.lblCON.Name = "lblCON"
         Me.lblCON.Size = New System.Drawing.Size(90, 20)
         Me.lblCON.TabIndex = 2
-        Me.lblCON.Text = "Constitution: 8"
+        Me.lblCON.Text = "Constitution: "
         Me.lblCON.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblDEX
@@ -158,7 +160,7 @@ Partial Class Initial
         Me.lblDEX.Name = "lblDEX"
         Me.lblDEX.Size = New System.Drawing.Size(90, 20)
         Me.lblDEX.TabIndex = 1
-        Me.lblDEX.Text = "Dexterity: 8"
+        Me.lblDEX.Text = "Dexterity: "
         Me.lblDEX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblSTR
@@ -169,11 +171,12 @@ Partial Class Initial
         Me.lblSTR.Name = "lblSTR"
         Me.lblSTR.Size = New System.Drawing.Size(90, 20)
         Me.lblSTR.TabIndex = 0
-        Me.lblSTR.Text = "Strength: 8"
+        Me.lblSTR.Text = "Strength: "
         Me.lblSTR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnScores
         '
+        Me.btnScores.Enabled = False
         Me.btnScores.Location = New System.Drawing.Point(178, 186)
         Me.btnScores.Name = "btnScores"
         Me.btnScores.Size = New System.Drawing.Size(129, 23)
@@ -243,6 +246,7 @@ Partial Class Initial
         '
         'btnSkills
         '
+        Me.btnSkills.Enabled = False
         Me.btnSkills.Location = New System.Drawing.Point(178, 244)
         Me.btnSkills.Name = "btnSkills"
         Me.btnSkills.Size = New System.Drawing.Size(129, 23)
@@ -252,6 +256,7 @@ Partial Class Initial
         '
         'btnFeats
         '
+        Me.btnFeats.Enabled = False
         Me.btnFeats.Location = New System.Drawing.Point(178, 215)
         Me.btnFeats.Name = "btnFeats"
         Me.btnFeats.Size = New System.Drawing.Size(129, 23)
@@ -262,7 +267,7 @@ Partial Class Initial
         'btnSave
         '
         Me.btnSave.Enabled = False
-        Me.btnSave.Location = New System.Drawing.Point(178, 273)
+        Me.btnSave.Location = New System.Drawing.Point(178, 331)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(129, 23)
         Me.btnSave.TabIndex = 9
@@ -271,6 +276,7 @@ Partial Class Initial
         '
         'btnClass
         '
+        Me.btnClass.Enabled = False
         Me.btnClass.Location = New System.Drawing.Point(178, 128)
         Me.btnClass.Name = "btnClass"
         Me.btnClass.Size = New System.Drawing.Size(129, 23)
@@ -322,6 +328,7 @@ Partial Class Initial
         '
         'btnAlign
         '
+        Me.btnAlign.Enabled = False
         Me.btnAlign.Location = New System.Drawing.Point(178, 157)
         Me.btnAlign.Name = "btnAlign"
         Me.btnAlign.Size = New System.Drawing.Size(129, 23)
@@ -342,6 +349,7 @@ Partial Class Initial
         '
         'btnGender
         '
+        Me.btnGender.Enabled = False
         Me.btnGender.Location = New System.Drawing.Point(178, 99)
         Me.btnGender.Name = "btnGender"
         Me.btnGender.Size = New System.Drawing.Size(129, 23)
@@ -349,11 +357,33 @@ Partial Class Initial
         Me.btnGender.Text = "Choose Gender"
         Me.btnGender.UseVisualStyleBackColor = True
         '
+        'btnBack
+        '
+        Me.btnBack.Enabled = False
+        Me.btnBack.Location = New System.Drawing.Point(178, 273)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(129, 23)
+        Me.btnBack.TabIndex = 17
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'btnReview
+        '
+        Me.btnReview.Enabled = False
+        Me.btnReview.Location = New System.Drawing.Point(178, 302)
+        Me.btnReview.Name = "btnReview"
+        Me.btnReview.Size = New System.Drawing.Size(129, 23)
+        Me.btnReview.TabIndex = 18
+        Me.btnReview.Text = "Review Character"
+        Me.btnReview.UseVisualStyleBackColor = True
+        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(327, 523)
+        Me.Controls.Add(Me.btnReview)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnGender)
         Me.Controls.Add(Me.lblGender)
         Me.Controls.Add(Me.btnAlign)
@@ -416,4 +446,6 @@ Partial Class Initial
     Friend WithEvents btnAlign As Button
     Friend WithEvents lblGender As Label
     Friend WithEvents btnGender As Button
+    Friend WithEvents btnBack As Button
+    Friend WithEvents btnReview As Button
 End Class

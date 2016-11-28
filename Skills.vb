@@ -262,8 +262,12 @@
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
 
-        'Simply closes the form; all skill points are already stored in the dictionary
+        'Enables the button for the next step and closes the form
+        Initial.btnReview.Enabled = True
         Me.Close()
+
+        'Disables the button for the current step
+        Initial.btnSkills.Enabled = False
 
     End Sub
 End Class

@@ -162,6 +162,12 @@
         'Enables the button for the next step
         Initial.btnGender.Enabled = True
 
+        'Disables the button for the current step
+        Initial.btnRace.Enabled = False
+
+        'Enables the Back button on the main form
+        Initial.btnBack.Enabled = True
+
         'Closes the form
         Me.Close()
 

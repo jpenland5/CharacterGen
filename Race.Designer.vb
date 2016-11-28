@@ -142,6 +142,7 @@ Partial Class Race
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(382, 369)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnSaveRace)
         Me.Controls.Add(Me.rtbRaceDetail)
