@@ -266,6 +266,9 @@
         Initial.btnReview.Enabled = True
         Me.Close()
 
+        'Enables the save button
+        Initial.btnSave.Enabled = True
+
         'Disables the button for the current step
         Initial.btnSkills.Enabled = False
 

@@ -1,0 +1,11 @@
+Frank
+Race: Human
+Gender: Male
+Class: Fighter
+Alignment: Lawful Good
+Strength: 12
+Dexterity: 12
+Constitution: 12
+Intelligence: 13
+Wisdom: 12
+Charisma: 12

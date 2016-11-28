@@ -161,6 +161,7 @@
             btnFeats.Enabled = True
         ElseIf btnReview.Enabled = True Then
             btnReview.Enabled = False
+            btnSave.Enabled = False
             Skills.Remove("Appraise")
             Skills.Remove("Bluff")
             Skills.Remove("Concentration")
@@ -178,6 +179,33 @@
         Dim oReview As Review
         oReview = New Review()
         oReview.Show()
+
+    End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
+        Dim file As System.IO.FileStream
+
+        If My.Computer.FileSystem.FileExists("(lblName.Text).txt") Then
+            MessageBox.Show("A character by that name already exists! Please rename your character or delete the old file.")
+        End If
+
+        file = System.IO.File.Create("(lblName.Text).txt")
+
+        Dim addInfo As New System.IO.StreamWriter("(lblName).txt")
+
+        addInfo.WriteLine(txtName.Text)
+        addInfo.WriteLine(lblRace.Text)
+        addInfo.WriteLine(lblGender.Text)
+        addInfo.WriteLine(lblClass.Text)
+        addInfo.WriteLine(lblAlign.Text)
+        addInfo.WriteLine(lblSTR.Text)
+        addInfo.WriteLine(lblDEX.Text)
+        addInfo.WriteLine(lblCON.Text)
+        addInfo.WriteLine(lblINT.Text)
+        addInfo.WriteLine(lblWIS.Text)
+        addInfo.WriteLine(lblCHA.Text)
+        addInfo.Close()
 
     End Sub
 End Class
