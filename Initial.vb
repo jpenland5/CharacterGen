@@ -184,17 +184,18 @@
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
 
-        Dim file As System.IO.FileStream
+        'Dim file As System.IO.FileStream
 
-        If My.Computer.FileSystem.FileExists("(lblName.Text).txt") Then
-            MessageBox.Show("A character by that name already exists! Please rename your character or delete the old file.")
+        If My.Computer.FileSystem.FileExists(txtName.Text & ".txt") Then
+            MessageBox.Show("A character by that name already exists! Please rename your character or delete the older character file.")
         End If
 
-        file = System.IO.File.Create("(lblName.Text).txt")
+        'file = System.IO.File.Create(txtName.Text & ".txt")
 
-        Dim addInfo As New System.IO.StreamWriter("(lblName).txt")
+        Dim addInfo As New System.IO.StreamWriter(txtName.Text & ".txt")
 
-        addInfo.WriteLine(txtName.Text)
+        addInfo.WriteLine("--PRIMARY STATS:--")
+        addInfo.WriteLine("Name: " & txtName.Text)
         addInfo.WriteLine(lblRace.Text)
         addInfo.WriteLine(lblGender.Text)
         addInfo.WriteLine(lblClass.Text)
@@ -205,6 +206,17 @@
         addInfo.WriteLine(lblINT.Text)
         addInfo.WriteLine(lblWIS.Text)
         addInfo.WriteLine(lblCHA.Text)
+        addInfo.WriteLine(rtbBiography.Text)
+        addInfo.WriteLine("")
+        addInfo.WriteLine("--FEATS:--")
+        addInfo.WriteLine("")
+        addInfo.WriteLine("--SKILLS:--")
+        addInfo.WriteLine("Appraise: " & Skills("Appraise"))
+        addInfo.WriteLine("Bluff: " & Skills("Bluff"))
+        addInfo.WriteLine("Concentration: " & Skills("Concentration"))
+        addInfo.WriteLine("Discipline: " & Skills("Discipline"))
+        addInfo.WriteLine("Intimidate: " & Skills("Intimidate"))
+        addInfo.WriteLine("Parry: " & Skills("Parry"))
         addInfo.Close()
 
     End Sub
