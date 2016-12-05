@@ -110,6 +110,12 @@
       <DependentUpon>Initial.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LoadReview.Designer.vb">
+      <DependentUpon>LoadReview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadReview.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Initial.resx">
       <DependentUpon>Initial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadReview.resx">
+      <DependentUpon>LoadReview.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

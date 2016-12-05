@@ -21,6 +21,8 @@
 
     Public mClassSkillMod As Integer = 4
 
+    'Dim mAllInfo As String
+
     Private Sub btnScores_Click(sender As Object, e As EventArgs) Handles btnScores.Click
 
         'Removes any current ability scores stored in the dictionary
@@ -329,7 +331,23 @@
 
     End Sub
 
-    'Private Sub SaveCharacterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveCharacterToolStripMenuItem.Click
+    Private Sub LoadCharacterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadCharacterToolStripMenuItem.Click
 
-    'End Sub
+        If CharacterLoad.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+
+            'Dim mAllInfo As String
+
+            'Dim fileReader As System.IO.StreamReader
+            'fileReader = My.Computer.FileSystem.OpenTextFileReader(CharacterLoad.FileName)
+            'mAllInfo = fileReader.ReadToEnd
+
+            'Brings up the form for viewing an existing character
+            Dim oLoadReview As LoadReview
+            oLoadReview = New LoadReview()
+            oLoadReview.Show()
+
+        End If
+
+    End Sub
+
 End Class

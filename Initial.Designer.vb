@@ -56,6 +56,7 @@ Partial Class Initial
         Me.btnGender = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnReview = New System.Windows.Forms.Button()
+        Me.CharacterLoad = New System.Windows.Forms.OpenFileDialog()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -377,6 +378,10 @@ Partial Class Initial
         Me.btnReview.Text = "Review Character"
         Me.btnReview.UseVisualStyleBackColor = True
         '
+        'CharacterLoad
+        '
+        Me.CharacterLoad.FileName = "OpenFileDialog1"
+        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -448,4 +453,5 @@ Partial Class Initial
     Friend WithEvents btnGender As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents btnReview As Button
+    Friend WithEvents CharacterLoad As OpenFileDialog
 End Class

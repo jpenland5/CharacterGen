@@ -56,7 +56,7 @@ Partial Class Review
         '
         Me.lblGender.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblGender.Location = New System.Drawing.Point(12, 70)
+        Me.lblGender.Location = New System.Drawing.Point(12, 67)
         Me.lblGender.Name = "lblGender"
         Me.lblGender.Size = New System.Drawing.Size(141, 20)
         Me.lblGender.TabIndex = 34
@@ -67,7 +67,7 @@ Partial Class Review
         '
         Me.lblAlign.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblAlign.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblAlign.Location = New System.Drawing.Point(12, 128)
+        Me.lblAlign.Location = New System.Drawing.Point(12, 125)
         Me.lblAlign.Name = "lblAlign"
         Me.lblAlign.Size = New System.Drawing.Size(141, 20)
         Me.lblAlign.TabIndex = 32
@@ -78,7 +78,7 @@ Partial Class Review
         '
         Me.lblClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblClass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblClass.Location = New System.Drawing.Point(12, 99)
+        Me.lblClass.Location = New System.Drawing.Point(12, 96)
         Me.lblClass.Name = "lblClass"
         Me.lblClass.Size = New System.Drawing.Size(141, 20)
         Me.lblClass.TabIndex = 31
@@ -89,7 +89,7 @@ Partial Class Review
         '
         Me.lblRace.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblRace.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblRace.Location = New System.Drawing.Point(12, 41)
+        Me.lblRace.Location = New System.Drawing.Point(12, 38)
         Me.lblRace.Name = "lblRace"
         Me.lblRace.Size = New System.Drawing.Size(141, 20)
         Me.lblRace.TabIndex = 26
@@ -98,7 +98,7 @@ Partial Class Review
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(99, 509)
+        Me.btnBack.Location = New System.Drawing.Point(99, 506)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(129, 23)
         Me.btnBack.TabIndex = 30
@@ -113,7 +113,7 @@ Partial Class Review
         Me.GroupBox1.Controls.Add(Me.lblCON)
         Me.GroupBox1.Controls.Add(Me.lblDEX)
         Me.GroupBox1.Controls.Add(Me.lblSTR)
-        Me.GroupBox1.Location = New System.Drawing.Point(175, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(175, 9)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(118, 157)
         Me.GroupBox1.TabIndex = 23
@@ -189,7 +189,7 @@ Partial Class Review
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 182)
+        Me.Label2.Location = New System.Drawing.Point(12, 179)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(60, 13)
         Me.Label2.TabIndex = 22
@@ -198,7 +198,7 @@ Partial Class Review
         'rtbBiography
         '
         Me.rtbBiography.BackColor = System.Drawing.SystemColors.Control
-        Me.rtbBiography.Location = New System.Drawing.Point(8, 204)
+        Me.rtbBiography.Location = New System.Drawing.Point(8, 201)
         Me.rtbBiography.Name = "rtbBiography"
         Me.rtbBiography.Size = New System.Drawing.Size(285, 299)
         Me.rtbBiography.TabIndex = 21
@@ -208,7 +208,7 @@ Partial Class Review
         '
         Me.lblName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblName.Location = New System.Drawing.Point(12, 12)
+        Me.lblName.Location = New System.Drawing.Point(12, 9)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(141, 20)
         Me.lblName.TabIndex = 35
@@ -224,7 +224,7 @@ Partial Class Review
         Me.GroupBox3.Controls.Add(Me.lblConcentration)
         Me.GroupBox3.Controls.Add(Me.lblBluff)
         Me.GroupBox3.Controls.Add(Me.lblAppraise)
-        Me.GroupBox3.Location = New System.Drawing.Point(313, 204)
+        Me.GroupBox3.Location = New System.Drawing.Point(313, 201)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(118, 328)
         Me.GroupBox3.TabIndex = 24
@@ -311,7 +311,7 @@ Partial Class Review
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.rtbFeats)
-        Me.GroupBox2.Location = New System.Drawing.Point(313, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(313, 9)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(118, 157)
         Me.GroupBox2.TabIndex = 36
