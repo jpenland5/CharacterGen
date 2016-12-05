@@ -1,0 +1,34 @@
+--PRIMARY STATS--
+Name: eeee
+Race: Human
+Gender: Male
+Class: Monk
+Alignment: Lawful Good
+Strength: 18
+Dexterity: 15
+Constitution: 9
+Intelligence: 8
+Wisdom: 8
+Charisma: 8
+
+--SKILLS--
+Appraise: 0
+Bluff: 0
+Concentration: 0
+Discipline: 0
+Intimidate: 0
+Parry: 0
+
+--FEATS--
+
+
+
+
+
+
+
+Power Attack
+Cleave
+
+--BIOGRAPHY--
+

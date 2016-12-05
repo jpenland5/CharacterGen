@@ -50,7 +50,7 @@
             rtbFeats.AppendText(Environment.NewLine & "Blooded")
         End If
 
-        If Initial.Feats("PowrAttack") = True Then
+        If Initial.Feats("PowerAttack") = True Then
             rtbFeats.AppendText(Environment.NewLine & "Power Attack")
         End If
 
@@ -68,12 +68,4 @@
 
     End Sub
 
-    'Private Sub btnSkills_Click(sender As Object, e As EventArgs)
-
-    'Brings up the form for reviewing chosen skills
-    ' Dim oSkillReview As SkillReview
-    'oSkillReview = New SkillReview()
-    ' oSkillReview.Show()
-
-    'End Sub
 End Class
