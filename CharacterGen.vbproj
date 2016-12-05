@@ -138,6 +138,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SkillFunc.vb" />
+    <Compile Include="SkillReview.Designer.vb">
+      <DependentUpon>SkillReview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SkillReview.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Skills.Designer.vb">
       <DependentUpon>Skills.vb</DependentUpon>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Review.resx">
       <DependentUpon>Review.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkillReview.resx">
+      <DependentUpon>SkillReview.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Skills.resx">
       <DependentUpon>Skills.vb</DependentUpon>

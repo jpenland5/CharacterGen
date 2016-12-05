@@ -1,18 +1,20 @@
 ﻿Public Class Feats
 
-    Dim mFeats As Integer = 1
+    Dim mFeats As Integer
 
     Private Sub Feats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Initial.Feats.Add("Alertness", 0)
-        Initial.Feats.Add("Ambidexterity", 0)
-        Initial.Feats.Add("ArmorH", 0)
-        Initial.Feats.Add("ArmorM", 0)
-        Initial.Feats.Add("ArmorL", 0)
-        Initial.Feats.Add("BlindFight", 0)
-        Initial.Feats.Add("Blooded", 0)
-        Initial.Feats.Add("PowerAttack", 0)
-        Initial.Feats.Add("Cleave", 0)
+        mFeats = 1
+
+        Initial.Feats.Add("Alertness", False)
+        Initial.Feats.Add("Ambidexterity", False)
+        Initial.Feats.Add("ArmorH", False)
+        Initial.Feats.Add("ArmorM", False)
+        Initial.Feats.Add("ArmorL", False)
+        Initial.Feats.Add("BlindFight", False)
+        Initial.Feats.Add("Blooded", False)
+        Initial.Feats.Add("PowerAttack", False)
+        Initial.Feats.Add("Cleave", False)
 
         If Initial.AbScores("STR") >= 13 Then
             chkPowerAttack.Enabled = True
@@ -22,15 +24,118 @@
             mFeats += 1
         End If
 
+        If Initial.mClass = 1 Then
+            mFeats += 2
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+            Initial.Feats("ArmorM") = 1
+            chkArmorM.Checked = True
+            chkArmorM.Enabled = False
+            chkArmorH.Enabled = True
+        End If
+
+        If Initial.mClass = 2 Then
+            mFeats += 2
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+            Initial.Feats("ArmorM") = 1
+            chkArmorM.Checked = True
+            chkArmorM.Enabled = False
+            chkArmorH.Enabled = True
+        End If
+
+        If Initial.mClass = 3 Then
+            mFeats += 3
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+            Initial.Feats("ArmorM") = 1
+            chkArmorM.Checked = True
+            chkArmorM.Enabled = False
+            Initial.Feats("ArmorH") = 1
+            chkArmorH.Checked = True
+            chkArmorH.Enabled = False
+        End If
+
+        If Initial.mClass = 4 Then
+            mFeats += 2
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+            Initial.Feats("ArmorM") = 1
+            chkArmorM.Checked = True
+            chkArmorM.Enabled = False
+            chkArmorH.Enabled = True
+        End If
+
+
         If Initial.mClass = 5 Then
+            mFeats += 4
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+            Initial.Feats("ArmorM") = 1
+            chkArmorM.Checked = True
+            chkArmorM.Enabled = False
+            Initial.Feats("ArmorH") = 1
+            chkArmorH.Checked = True
+            chkArmorH.Enabled = False
+
+        End If
+
+        If Initial.mClass = 6 Then
+
+        End If
+
+        If Initial.mClass = 7 Then
+            mFeats += 3
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+            Initial.Feats("ArmorM") = 1
+            chkArmorM.Checked = True
+            chkArmorM.Enabled = False
+            Initial.Feats("ArmorH") = 1
+            chkArmorH.Checked = True
+            chkArmorH.Enabled = False
+
+        End If
+
+        If Initial.mClass = 8 Then
+            mFeats += 3
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+            Initial.Feats("ArmorM") = 1
+            chkArmorM.Checked = True
+            chkArmorM.Enabled = False
+            chkArmorH.Enabled = True
+            Initial.Feats("Ambidexterity") = 1
+            chkAmbidex.Checked = True
+            chkAmbidex.Enabled = False
+
+        End If
+
+        If Initial.mClass = 9 Then
             mFeats += 1
+            Initial.Feats("ArmorL") = 1
+            chkArmorL.Checked = True
+            chkArmorL.Enabled = False
+
+            chkArmorM.Enabled = True
+        End If
+
+        If Initial.mClass = 9 Then
+
+        End If
+
+        If Initial.mClass = 9 Then
+
         End If
 
         lblFeats.Text = mFeats
-
-    End Sub
-
-    Private Sub chkAlertness_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -109,14 +214,18 @@
 
     Private Sub chkPowerAttack_CheckedChanged(sender As Object, e As EventArgs) Handles chkPowerAttack.CheckedChanged
 
-        'If mFeats = 0 Then
-        '    MessageBox.Show("You don't have any feats left to select!")
-        '    Exit Sub
         If chkPowerAttack.Checked = True Then
-            chkCleave.Enabled = True
-            Initial.Feats("PowerAttack") = 1
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkPowerAttack.Checked = False
+                Exit Sub
+            Else
+                chkCleave.Enabled = True
+                Initial.Feats("PowerAttack") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
         ElseIf chkPowerAttack.Checked = False Then
             chkCleave.Checked = False
             If chkCleave.Checked = True Then
@@ -136,10 +245,17 @@
         '    MessageBox.Show("You don't have any feats left to select!")
         '    Exit Sub
         If chkArmorL.Checked = True Then
-            chkArmorM.Enabled = True
-            Initial.Feats("ArmorL") = 1
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkArmorL.Checked = False
+                Exit Sub
+            Else
+                chkArmorM.Enabled = True
+                Initial.Feats("ArmorL") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
         ElseIf chkArmorL.Checked = False Then
             chkArmorM.Enabled = False
             Initial.Feats("ArmorL") = 0
@@ -155,10 +271,17 @@
         '    MessageBox.Show("You don't have any feats left to select!")
         '    Exit Sub
         If chkArmorM.Checked = True Then
-            Initial.Feats("ArmorM") = 1
-            chkArmorH.Enabled = True
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkArmorM.Checked = False
+                Exit Sub
+            Else
+                Initial.Feats("ArmorM") = 1
+                chkArmorH.Enabled = True
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
         ElseIf chkArmorM.Checked = False Then
             chkArmorH.Enabled = False
             Initial.Feats("ArmorM") = 0
@@ -169,13 +292,18 @@
 
     Private Sub chkArmorH_CheckedChanged(sender As Object, e As EventArgs) Handles chkArmorH.CheckedChanged
 
-        'If mFeats = 0 Then
-        '    MessageBox.Show("You don't have any feats left to select!")
-        '    Exit Sub
         If chkArmorH.Checked = True Then
-            Initial.Feats("ArmorH") = 1
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkArmorH.Checked = False
+                Exit Sub
+            Else
+                Initial.Feats("ArmorH") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
+
         ElseIf chkArmorH.Checked = False Then
             Initial.Feats("ArmorH") = 0
             mFeats += 1
@@ -187,9 +315,16 @@
     Private Sub chkAlertness_CheckedChanged_1(sender As Object, e As EventArgs) Handles chkAlertness.CheckedChanged
 
         If chkAlertness.Checked = True Then
-            Initial.Feats("Alertness") = 1
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkAlertness.Checked = False
+                Exit Sub
+            Else
+                Initial.Feats("Alertness") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
         ElseIf chkAlertness.Checked = False Then
             Initial.Feats("Alertness") = 0
             mFeats += 1
@@ -201,11 +336,18 @@
     Private Sub chkAmbidex_CheckedChanged(sender As Object, e As EventArgs) Handles chkAmbidex.CheckedChanged
 
         If chkAmbidex.Checked = True Then
-            Initial.Feats("Ambidexterity") = 1
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkAmbidex.Checked = False
+                Exit Sub
+            Else
+                Initial.Feats("Ambidexterity") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
         ElseIf chkAmbidex.Checked = False Then
-            Initial.Feats("Ambidexterity") = 0
+                Initial.Feats("Ambidexterity") = 0
             mFeats += 1
             lblFeats.Text = mFeats
         End If
@@ -215,9 +357,16 @@
     Private Sub chkBlindFight_CheckedChanged(sender As Object, e As EventArgs) Handles chkBlindFight.CheckedChanged
 
         If chkBlindFight.Checked = True Then
-            Initial.Feats("BlindFight") = 1
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkBlindFight.Checked = False
+                Exit Sub
+            Else
+                Initial.Feats("BlindFight") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
         ElseIf chkBlindFight.Checked = False Then
             Initial.Feats("BlindFight") = 0
             mFeats += 1
@@ -229,11 +378,39 @@
     Private Sub chkBlooded_CheckedChanged(sender As Object, e As EventArgs) Handles chkBlooded.CheckedChanged
 
         If chkBlooded.Checked = True Then
-            Initial.Feats("Blooded") = 1
-            mFeats -= 1
-            lblFeats.Text = mFeats
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkBlooded.Checked = False
+                Exit Sub
+            Else
+                Initial.Feats("Blooded") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
         ElseIf chkBlooded.Checked = False Then
             Initial.Feats("Blooded") = 0
+            mFeats += 1
+            lblFeats.Text = mFeats
+        End If
+
+    End Sub
+
+    Private Sub chkCleave_CheckedChanged(sender As Object, e As EventArgs) Handles chkCleave.CheckedChanged
+
+        If chkCleave.Checked = True Then
+            If mFeats = 0 Then
+                MessageBox.Show("You don't have any feats left to select!")
+                mFeats -= 1
+                chkCleave.Checked = False
+                Exit Sub
+            Else
+                Initial.Feats("Cleave") = 1
+                mFeats -= 1
+                lblFeats.Text = mFeats
+            End If
+        ElseIf chkCleave.Checked = False Then
+            Initial.Feats("Cleave") = 0
             mFeats += 1
             lblFeats.Text = mFeats
         End If
@@ -243,17 +420,30 @@
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
 
         'Clears the selected feats from the dictionary and closes the form
-        Initial.Feats("Alertness") = 0
-        Initial.Feats("Ambidexterity") = 0
-        Initial.Feats("ArmorH") = 0
-        Initial.Feats("ArmorM") = 0
-        Initial.Feats("ArmorL") = 0
-        Initial.Feats("BlindFight") = 0
-        Initial.Feats("Blooded") = 0
-        Initial.Feats("PowerAttack") = 0
-        Initial.Feats("Cleave") = 0
+        Initial.Feats.Remove("Alertness")
+        Initial.Feats.Remove("Ambidexterity")
+        Initial.Feats.Remove("ArmorH")
+        Initial.Feats.Remove("ArmorM")
+        Initial.Feats.Remove("ArmorL")
+        Initial.Feats.Remove("BlindFight")
+        Initial.Feats.Remove("Blooded")
+        Initial.Feats.Remove("PowerAttack")
+        Initial.Feats.Remove("Cleave")
+        'Initial.Feats("Alertness") = 0
+        'Initial.Feats("Ambidexterity") = 0
+        'Initial.Feats("ArmorH") = 0
+        'Initial.Feats("ArmorM") = 0
+        'Initial.Feats("ArmorL") = 0
+        'Initial.Feats("BlindFight") = 0
+        'Initial.Feats("Blooded") = 0
+        'Initial.Feats("PowerAttack") = 0
+        'Initial.Feats("Cleave") = 0
+
+        mFeats = 1
 
         Me.Close()
 
     End Sub
+
+
 End Class

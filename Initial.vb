@@ -12,7 +12,7 @@
     Public Skills As New Dictionary(Of String, Integer)
 
     'Creates dictionary for tracking selected feats
-    Public Feats As New Dictionary(Of String, Integer)
+    Public Feats As New Dictionary(Of String, Boolean)
 
     'Creates a variable for tracking the chosen class
     Public mClass As Integer
@@ -101,10 +101,6 @@
 
     End Sub
 
-    Private Sub Initial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
 
         'Disables the Gender button and reverts effects of race selection
@@ -141,23 +137,23 @@
             AbScores.Remove("WIS")
             AbScores.Remove("CHA")
             lblSTR.Text = "Strength: "
-            lblSTR.Text = "Strength: "
-            lblSTR.Text = "Strength: "
-            lblSTR.Text = "Strength: "
-            lblSTR.Text = "Strength: "
-            lblSTR.Text = "Strength: "
+            lblDEX.Text = "Dexterity: "
+            lblCON.Text = "Constitution: "
+            lblINT.Text = "Intelligence: "
+            lblWIS.Text = "Wisdom: "
+            lblCHA.Text = "Charisma: "
             btnScores.Enabled = True
         ElseIf btnSkills.Enabled = True Then
             btnSkills.Enabled = False
-            Feats("Alertness") = 0
-            Feats("Ambidexterity") = 0
-            Feats("ArmorH") = 0
-            Feats("ArmorM") = 0
-            Feats("ArmorL") = 0
-            Feats("BlindFight") = 0
-            Feats("Blooded") = 0
-            Feats("PowerAttack") = 0
-            Feats("Cleave") = 0
+            Feats.Remove("Alertness")
+            Feats.Remove("Ambidexterity")
+            Feats.Remove("ArmorH")
+            Feats.Remove("ArmorM")
+            Feats.Remove("ArmorL")
+            Feats.Remove("BlindFight")
+            Feats.Remove("Blooded")
+            Feats.Remove("PowerAttack")
+            Feats.Remove("Cleave")
             btnFeats.Enabled = True
         ElseIf btnReview.Enabled = True Then
             btnReview.Enabled = False
@@ -182,42 +178,158 @@
 
     End Sub
 
-    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click, SaveCharacterToolStripMenuItem.Click
 
         'Dim file As System.IO.FileStream
 
         If My.Computer.FileSystem.FileExists(txtName.Text & ".txt") Then
-            MessageBox.Show("A character by that name already exists! Please rename your character or delete the older character file.")
+
+            Dim choice = MsgBox("A character by that name already exists! Do you wish to replace the existing file?", MsgBoxStyle.OkCancel, "Character Exists!")
+            If choice = DialogResult.Cancel Then
+
+                Exit Sub
+
+            ElseIf choice = DialogResult.OK Then
+
+                'file = System.IO.File.Create(txtName.Text & ".txt")
+                Dim addInfo As New System.IO.StreamWriter(txtName.Text & ".txt")
+
+                addInfo.WriteLine("--PRIMARY STATS--")
+                addInfo.WriteLine("Name: " & txtName.Text)
+                addInfo.WriteLine(lblRace.Text)
+                addInfo.WriteLine(lblGender.Text)
+                addInfo.WriteLine(lblClass.Text)
+                addInfo.WriteLine(lblAlign.Text)
+                addInfo.WriteLine(lblSTR.Text)
+                addInfo.WriteLine(lblDEX.Text)
+                addInfo.WriteLine(lblCON.Text)
+                addInfo.WriteLine(lblINT.Text)
+                addInfo.WriteLine(lblWIS.Text)
+                addInfo.WriteLine(lblCHA.Text)
+                addInfo.WriteLine(rtbBiography.Text)
+                addInfo.WriteLine("")
+                addInfo.WriteLine("--FEATS--")
+
+                If Feats("Alertness") = True Then
+                    addInfo.WriteLine("Alertness")
+                End If
+
+                If Feats("Ambidexterity") = True Then
+                    addInfo.WriteLine("Ambidexterity")
+                End If
+
+                If Feats("ArmorH") = True Then
+                    addInfo.WriteLine("Armor Proficiency (H)")
+                End If
+
+                If Feats("ArmorM") = True Then
+                    addInfo.WriteLine("Armor Proficiency (M)")
+                End If
+
+                If Feats("ArmorL") = True Then
+                    addInfo.WriteLine("Armor Proficiency (L)")
+                End If
+
+                If Feats("BlindFight") = True Then
+                    addInfo.WriteLine("Blind Fight")
+                End If
+
+                If Feats("Blooded") = True Then
+                    addInfo.WriteLine("Blooded")
+                End If
+
+                If Feats("PowerAttack") = True Then
+                    addInfo.WriteLine("Power Attack")
+                End If
+
+                If Feats("Cleave") = True Then
+                    addInfo.WriteLine("Cleave")
+                End If
+
+                addInfo.WriteLine("")
+                addInfo.WriteLine("--SKILLS--")
+                addInfo.WriteLine("Appraise: " & Skills("Appraise"))
+                addInfo.WriteLine("Bluff: " & Skills("Bluff"))
+                addInfo.WriteLine("Concentration: " & Skills("Concentration"))
+                addInfo.WriteLine("Discipline: " & Skills("Discipline"))
+                addInfo.WriteLine("Intimidate: " & Skills("Intimidate"))
+                addInfo.WriteLine("Parry: " & Skills("Parry"))
+                addInfo.Close()
+            End If
+        Else
+            Dim addInfo As New System.IO.StreamWriter(txtName.Text & ".txt")
+
+            addInfo.WriteLine("--PRIMARY STATS--")
+            addInfo.WriteLine("Name: " & txtName.Text)
+            addInfo.WriteLine(lblRace.Text)
+            addInfo.WriteLine(lblGender.Text)
+            addInfo.WriteLine(lblClass.Text)
+            addInfo.WriteLine(lblAlign.Text)
+            addInfo.WriteLine(lblSTR.Text)
+            addInfo.WriteLine(lblDEX.Text)
+            addInfo.WriteLine(lblCON.Text)
+            addInfo.WriteLine(lblINT.Text)
+            addInfo.WriteLine(lblWIS.Text)
+            addInfo.WriteLine(lblCHA.Text)
+            addInfo.WriteLine(rtbBiography.Text)
+            addInfo.WriteLine("")
+            addInfo.WriteLine("--FEATS--")
+
+            If Feats("Alertness") = True Then
+                addInfo.WriteLine("Alertness")
+            End If
+
+            If Feats("Ambidexterity") = True Then
+                addInfo.WriteLine("Ambidexterity")
+            End If
+
+            If Feats("ArmorH") = True Then
+                addInfo.WriteLine("Armor Proficiency (H)")
+            End If
+
+            If Feats("ArmorM") = True Then
+                addInfo.WriteLine("Armor Proficiency (M)")
+            End If
+
+            If Feats("ArmorL") = True Then
+                addInfo.WriteLine("Armor Proficiency (L)")
+            End If
+
+            If Feats("BlindFight") = True Then
+                addInfo.WriteLine("Blind Fight")
+            End If
+
+            If Feats("Blooded") = True Then
+                addInfo.WriteLine("Blooded")
+            End If
+
+            If Feats("PowrAttack") = True Then
+                addInfo.WriteLine("Power Attack")
+            End If
+
+            If Feats("Cleave") = True Then
+                addInfo.WriteLine("Cleave")
+            End If
+
+            addInfo.WriteLine("")
+            addInfo.WriteLine("--SKILLS--")
+            addInfo.WriteLine("Appraise: " & Skills("Appraise"))
+            addInfo.WriteLine("Bluff: " & Skills("Bluff"))
+            addInfo.WriteLine("Concentration: " & Skills("Concentration"))
+            addInfo.WriteLine("Discipline: " & Skills("Discipline"))
+            addInfo.WriteLine("Intimidate: " & Skills("Intimidate"))
+            addInfo.WriteLine("Parry: " & Skills("Parry"))
+            addInfo.Close()
         End If
+    End Sub
 
-        'file = System.IO.File.Create(txtName.Text & ".txt")
+    Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
 
-        Dim addInfo As New System.IO.StreamWriter(txtName.Text & ".txt")
-
-        addInfo.WriteLine("--PRIMARY STATS:--")
-        addInfo.WriteLine("Name: " & txtName.Text)
-        addInfo.WriteLine(lblRace.Text)
-        addInfo.WriteLine(lblGender.Text)
-        addInfo.WriteLine(lblClass.Text)
-        addInfo.WriteLine(lblAlign.Text)
-        addInfo.WriteLine(lblSTR.Text)
-        addInfo.WriteLine(lblDEX.Text)
-        addInfo.WriteLine(lblCON.Text)
-        addInfo.WriteLine(lblINT.Text)
-        addInfo.WriteLine(lblWIS.Text)
-        addInfo.WriteLine(lblCHA.Text)
-        addInfo.WriteLine(rtbBiography.Text)
-        addInfo.WriteLine("")
-        addInfo.WriteLine("--FEATS:--")
-        addInfo.WriteLine("")
-        addInfo.WriteLine("--SKILLS:--")
-        addInfo.WriteLine("Appraise: " & Skills("Appraise"))
-        addInfo.WriteLine("Bluff: " & Skills("Bluff"))
-        addInfo.WriteLine("Concentration: " & Skills("Concentration"))
-        addInfo.WriteLine("Discipline: " & Skills("Discipline"))
-        addInfo.WriteLine("Intimidate: " & Skills("Intimidate"))
-        addInfo.WriteLine("Parry: " & Skills("Parry"))
-        addInfo.Close()
+        Application.Restart()
 
     End Sub
+
+    'Private Sub SaveCharacterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveCharacterToolStripMenuItem.Click
+
+    'End Sub
 End Class

@@ -1,0 +1,27 @@
+--PRIMARY STATS--
+Name: aaaa
+Race: Human
+Gender: Female
+Class: Druid
+Alignment: Lawful Neutral
+Strength: 14
+Dexterity: 8
+Constitution: 12
+Intelligence: 11
+Wisdom: 12
+Charisma: 15
+
+
+--FEATS--
+Ambidexterity
+Armor Proficiency (H)
+Armor Proficiency (M)
+Armor Proficiency (L)
+
+--SKILLS--
+Appraise: 0
+Bluff: 4
+Concentration: 4
+Discipline: 4
+Intimidate: 4
+Parry: 4

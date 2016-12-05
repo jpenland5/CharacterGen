@@ -248,13 +248,13 @@
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
 
-        'Resets all skill points and closes the form
-        Initial.Skills("Appraise") = 0
-        Initial.Skills("Bluff") = 0
-        Initial.Skills("Concentration") = 0
-        Initial.Skills("Discipline") = 0
-        Initial.Skills("Intimidate") = 0
-        Initial.Skills("Parry") = 0
+        'Resets all skill point selections and closes the form
+        Initial.Skills.Remove("Appraise")
+        Initial.Skills.Remove("Bluff")
+        Initial.Skills.Remove("Concentration")
+        Initial.Skills.Remove("Discipline")
+        Initial.Skills.Remove("Intimidate")
+        Initial.Skills.Remove("Parry")
 
         Me.Close()
 
