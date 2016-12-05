@@ -1,0 +1,28 @@
+--PRIMARY STATS--
+Name: cccc
+Race: Human
+Gender: Male
+Class: Barbarian
+Alignment: True Neutral
+Strength: 14
+Dexterity: 12
+Constitution: 12
+Intelligence: 9
+Wisdom: 13
+Charisma: 13
+
+--SKILLS--
+Appraise: 0
+Bluff: 4
+Concentration: 0
+Discipline: 4
+Intimidate: 4
+Parry: 4
+
+--FEATS--
+Armor Proficiency (M)
+Armor Proficiency (L)
+Power Attack
+Cleave
+--BIOGRAPHY--
+

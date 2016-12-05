@@ -407,7 +407,9 @@ Partial Class Initial
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Initial"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "D&D 3rd Ed Character Creator"

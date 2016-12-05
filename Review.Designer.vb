@@ -345,6 +345,7 @@ Partial Class Review
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.rtbBiography)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Review"
         Me.Text = "Character Review"
         Me.GroupBox1.ResumeLayout(False)

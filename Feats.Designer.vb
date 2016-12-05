@@ -319,6 +319,7 @@ Partial Class Feats
         Me.Controls.Add(Me.chkArmorM)
         Me.Controls.Add(Me.chkArmorH)
         Me.Controls.Add(Me.chkAmbidex)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Feats"

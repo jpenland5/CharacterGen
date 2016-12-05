@@ -66,6 +66,7 @@ Partial Class Gender
         Me.Controls.Add(Me.btnFemale)
         Me.Controls.Add(Me.btnMale)
         Me.Controls.Add(Me.RichTextBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Gender"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gender"

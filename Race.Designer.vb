@@ -154,6 +154,7 @@ Partial Class Race
         Me.Controls.Add(Me.btnDwarf)
         Me.Controls.Add(Me.btnHuman)
         Me.Controls.Add(Me.RichTextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Race"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Race"

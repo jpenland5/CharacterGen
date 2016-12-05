@@ -177,6 +177,7 @@ Partial Class Alignment
         Me.Controls.Add(Me.btnChaG)
         Me.Controls.Add(Me.btnChaN)
         Me.Controls.Add(Me.RichTextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Alignment"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Alignment"

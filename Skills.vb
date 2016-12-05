@@ -262,15 +262,27 @@
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
 
+        'Validates that the user has spent all Skill Points before continuing
+        'THIS VALIDATION IS INTENTIONALLY DISABLED
+        'Due to the incomplete list of skills it is possible to accumulate more Skill Points than can actually be spent based on the 4-point-per-skill limit
+        'This validation is disabled to allow the user to progress beyond this screen in such an event
+
+        'If mSkillPoints > 0 Then
+        '    MessageBox.Show("Please spend all skill points before continuing!")
+        '    Exit Sub
+        'Else
+
         'Enables the button for the next step and closes the form
         Initial.btnReview.Enabled = True
-        Me.Close()
+            Me.Close()
 
-        'Enables the save button
-        Initial.btnSave.Enabled = True
+            'Enables the save button
+            Initial.btnSave.Enabled = True
 
-        'Disables the button for the current step
-        Initial.btnSkills.Enabled = False
+            'Disables the button for the current step
+            Initial.btnSkills.Enabled = False
+
+        'End If
 
     End Sub
 End Class

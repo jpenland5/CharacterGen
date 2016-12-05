@@ -312,6 +312,7 @@ Partial Class Skills
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.rtbSkillInfo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Skills"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Skills"

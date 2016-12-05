@@ -56,10 +56,10 @@ Partial Class LoadReview
         '
         Me.rtbFeats.BackColor = System.Drawing.SystemColors.Control
         Me.rtbFeats.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.rtbFeats.Location = New System.Drawing.Point(6, 22)
+        Me.rtbFeats.Location = New System.Drawing.Point(6, 19)
         Me.rtbFeats.Name = "rtbFeats"
         Me.rtbFeats.ReadOnly = True
-        Me.rtbFeats.Size = New System.Drawing.Size(106, 120)
+        Me.rtbFeats.Size = New System.Drawing.Size(138, 147)
         Me.rtbFeats.TabIndex = 7
         Me.rtbFeats.Text = ""
         '
@@ -69,7 +69,7 @@ Partial Class LoadReview
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.Label1.Location = New System.Drawing.Point(15, 142)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 171)
+        Me.Label1.Size = New System.Drawing.Size(90, 151)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Space For Additional Skills"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -145,7 +145,7 @@ Partial Class LoadReview
         Me.GroupBox2.Controls.Add(Me.rtbFeats)
         Me.GroupBox2.Location = New System.Drawing.Point(313, 9)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(118, 157)
+        Me.GroupBox2.Size = New System.Drawing.Size(150, 172)
         Me.GroupBox2.TabIndex = 47
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Feats: "
@@ -159,9 +159,9 @@ Partial Class LoadReview
         Me.GroupBox3.Controls.Add(Me.lblConcentration)
         Me.GroupBox3.Controls.Add(Me.lblBluff)
         Me.GroupBox3.Controls.Add(Me.lblAppraise)
-        Me.GroupBox3.Location = New System.Drawing.Point(313, 201)
+        Me.GroupBox3.Location = New System.Drawing.Point(336, 223)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(118, 328)
+        Me.GroupBox3.Size = New System.Drawing.Size(118, 306)
         Me.GroupBox3.TabIndex = 40
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Skills"
@@ -192,7 +192,7 @@ Partial Class LoadReview
         '
         Me.lblDEX.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblDEX.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblDEX.Location = New System.Drawing.Point(15, 42)
+        Me.lblDEX.Location = New System.Drawing.Point(15, 49)
         Me.lblDEX.Name = "lblDEX"
         Me.lblDEX.Size = New System.Drawing.Size(90, 20)
         Me.lblDEX.TabIndex = 1
@@ -202,9 +202,9 @@ Partial Class LoadReview
         'rtbBiography
         '
         Me.rtbBiography.BackColor = System.Drawing.SystemColors.Control
-        Me.rtbBiography.Location = New System.Drawing.Point(8, 201)
+        Me.rtbBiography.Location = New System.Drawing.Point(8, 223)
         Me.rtbBiography.Name = "rtbBiography"
-        Me.rtbBiography.Size = New System.Drawing.Size(285, 299)
+        Me.rtbBiography.Size = New System.Drawing.Size(285, 277)
         Me.rtbBiography.TabIndex = 37
         Me.rtbBiography.Text = ""
         '
@@ -212,7 +212,7 @@ Partial Class LoadReview
         '
         Me.lblCHA.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblCHA.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblCHA.Location = New System.Drawing.Point(15, 122)
+        Me.lblCHA.Location = New System.Drawing.Point(15, 130)
         Me.lblCHA.Name = "lblCHA"
         Me.lblCHA.Size = New System.Drawing.Size(90, 20)
         Me.lblCHA.TabIndex = 6
@@ -223,7 +223,7 @@ Partial Class LoadReview
         '
         Me.lblWIS.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblWIS.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblWIS.Location = New System.Drawing.Point(15, 102)
+        Me.lblWIS.Location = New System.Drawing.Point(15, 109)
         Me.lblWIS.Name = "lblWIS"
         Me.lblWIS.Size = New System.Drawing.Size(90, 20)
         Me.lblWIS.TabIndex = 5
@@ -234,7 +234,7 @@ Partial Class LoadReview
         '
         Me.lblINT.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblINT.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblINT.Location = New System.Drawing.Point(15, 82)
+        Me.lblINT.Location = New System.Drawing.Point(15, 89)
         Me.lblINT.Name = "lblINT"
         Me.lblINT.Size = New System.Drawing.Size(90, 20)
         Me.lblINT.TabIndex = 3
@@ -245,7 +245,7 @@ Partial Class LoadReview
         '
         Me.lblCON.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblCON.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblCON.Location = New System.Drawing.Point(15, 62)
+        Me.lblCON.Location = New System.Drawing.Point(15, 69)
         Me.lblCON.Name = "lblCON"
         Me.lblCON.Size = New System.Drawing.Size(90, 20)
         Me.lblCON.TabIndex = 2
@@ -304,7 +304,7 @@ Partial Class LoadReview
         Me.GroupBox1.Controls.Add(Me.lblSTR)
         Me.GroupBox1.Location = New System.Drawing.Point(175, 9)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(118, 157)
+        Me.GroupBox1.Size = New System.Drawing.Size(118, 172)
         Me.GroupBox1.TabIndex = 39
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ability Scores"
@@ -313,7 +313,7 @@ Partial Class LoadReview
         '
         Me.lblSTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblSTR.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblSTR.Location = New System.Drawing.Point(15, 22)
+        Me.lblSTR.Location = New System.Drawing.Point(15, 29)
         Me.lblSTR.Name = "lblSTR"
         Me.lblSTR.Size = New System.Drawing.Size(90, 20)
         Me.lblSTR.TabIndex = 0
@@ -323,7 +323,7 @@ Partial Class LoadReview
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 179)
+        Me.Label2.Location = New System.Drawing.Point(9, 198)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(60, 13)
         Me.Label2.TabIndex = 38
@@ -333,7 +333,7 @@ Partial Class LoadReview
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(444, 544)
+        Me.ClientSize = New System.Drawing.Size(475, 544)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.lblName)
@@ -345,6 +345,7 @@ Partial Class LoadReview
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "LoadReview"
         Me.Text = "Character Viewer"
         Me.GroupBox2.ResumeLayout(False)

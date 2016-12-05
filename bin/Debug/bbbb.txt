@@ -1,0 +1,34 @@
+--PRIMARY STATS--
+Name: bbbb
+Race: Human
+Gender: Male
+Class: Fighter
+Alignment: Neutral Good
+Strength: 18
+Dexterity: 15
+Constitution: 9
+Intelligence: 8
+Wisdom: 8
+Charisma: 8
+
+--SKILLS--
+Appraise: 0
+Bluff: 4
+Concentration: 4
+Discipline: 0
+Intimidate: 4
+Parry: 4
+
+--FEATS--
+Alertness
+Ambidexterity
+Armor Proficiency (H)
+Armor Proficiency (M)
+Armor Proficiency (L)
+Blind Fight
+Blooded
+Power Attack
+Cleave
+
+--BIOGRAPHY--
+

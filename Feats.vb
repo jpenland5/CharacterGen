@@ -139,22 +139,25 @@
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-        'Updates the feat details to reflect the chosen feat
-        rtbFeatInfo.Text = "Alertness" & vbCrLf & "Prerequisites: None" & vbCrLf & "Specifics: +2 bonus to spot and listen skills due to finely tuned senses."
-    End Sub
-
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
 
-        'Enables the button for the next step
-        Initial.btnSkills.Enabled = True
+        If mFeats > 0 Then
 
-        'Disables the button for the current step
-        Initial.btnFeats.Enabled = False
+            MessageBox.Show("Please select all feats before continuing!")
+            Exit Sub
 
-        'Closes the form
-        Me.Close()
+        Else
+
+            'Enables the button for the next step
+            Initial.btnSkills.Enabled = True
+
+            'Disables the button for the current step
+            Initial.btnFeats.Enabled = False
+
+            'Closes the form
+            Me.Close()
+
+        End If
 
     End Sub
 
@@ -429,15 +432,6 @@
         Initial.Feats.Remove("Blooded")
         Initial.Feats.Remove("PowerAttack")
         Initial.Feats.Remove("Cleave")
-        'Initial.Feats("Alertness") = 0
-        'Initial.Feats("Ambidexterity") = 0
-        'Initial.Feats("ArmorH") = 0
-        'Initial.Feats("ArmorM") = 0
-        'Initial.Feats("ArmorL") = 0
-        'Initial.Feats("BlindFight") = 0
-        'Initial.Feats("Blooded") = 0
-        'Initial.Feats("PowerAttack") = 0
-        'Initial.Feats("Cleave") = 0
 
         mFeats = 1
 

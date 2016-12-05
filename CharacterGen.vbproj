@@ -72,7 +72,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbScoreCalc.vb" />
     <Compile Include="AbScores.Designer.vb">
       <DependentUpon>AbScores.vb</DependentUpon>
     </Compile>
@@ -143,7 +142,6 @@
     <Compile Include="Review.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SkillFunc.vb" />
     <Compile Include="SkillReview.Designer.vb">
       <DependentUpon>SkillReview.vb</DependentUpon>
     </Compile>

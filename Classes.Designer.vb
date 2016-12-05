@@ -198,6 +198,7 @@ Partial Class Classes
         Me.Controls.Add(Me.btnCleric)
         Me.Controls.Add(Me.btnBard)
         Me.Controls.Add(Me.btnBarb)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Classes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Classes"

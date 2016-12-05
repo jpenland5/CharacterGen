@@ -208,45 +208,6 @@
                 addInfo.WriteLine(lblINT.Text)
                 addInfo.WriteLine(lblWIS.Text)
                 addInfo.WriteLine(lblCHA.Text)
-                addInfo.WriteLine(rtbBiography.Text)
-                addInfo.WriteLine("")
-                addInfo.WriteLine("--FEATS--")
-
-                If Feats("Alertness") = True Then
-                    addInfo.WriteLine("Alertness")
-                End If
-
-                If Feats("Ambidexterity") = True Then
-                    addInfo.WriteLine("Ambidexterity")
-                End If
-
-                If Feats("ArmorH") = True Then
-                    addInfo.WriteLine("Armor Proficiency (H)")
-                End If
-
-                If Feats("ArmorM") = True Then
-                    addInfo.WriteLine("Armor Proficiency (M)")
-                End If
-
-                If Feats("ArmorL") = True Then
-                    addInfo.WriteLine("Armor Proficiency (L)")
-                End If
-
-                If Feats("BlindFight") = True Then
-                    addInfo.WriteLine("Blind Fight")
-                End If
-
-                If Feats("Blooded") = True Then
-                    addInfo.WriteLine("Blooded")
-                End If
-
-                If Feats("PowerAttack") = True Then
-                    addInfo.WriteLine("Power Attack")
-                End If
-
-                If Feats("Cleave") = True Then
-                    addInfo.WriteLine("Cleave")
-                End If
 
                 addInfo.WriteLine("")
                 addInfo.WriteLine("--SKILLS--")
@@ -256,7 +217,70 @@
                 addInfo.WriteLine("Discipline: " & Skills("Discipline"))
                 addInfo.WriteLine("Intimidate: " & Skills("Intimidate"))
                 addInfo.WriteLine("Parry: " & Skills("Parry"))
+
+                addInfo.WriteLine("")
+                addInfo.WriteLine("--FEATS--")
+
+                If Feats("Alertness") = True Then
+                    addInfo.WriteLine("Alertness")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("Ambidexterity") = True Then
+                    addInfo.WriteLine("Ambidexterity")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("ArmorH") = True Then
+                    addInfo.WriteLine("Armor Proficiency (H)")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("ArmorM") = True Then
+                    addInfo.WriteLine("Armor Proficiency (M)")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("ArmorL") = True Then
+                    addInfo.WriteLine("Armor Proficiency (L)")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("BlindFight") = True Then
+                    addInfo.WriteLine("Blind Fight")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("Blooded") = True Then
+                    addInfo.WriteLine("Blooded")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("PowerAttack") = True Then
+                    addInfo.WriteLine("Power Attack")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                If Feats("Cleave") = True Then
+                    addInfo.WriteLine("Cleave")
+                Else
+                    addInfo.WriteLine("")
+                End If
+
+                addInfo.WriteLine("")
+                addInfo.WriteLine("--BIOGRAPHY--")
+                addInfo.WriteLine(rtbBiography.Text)
+
                 addInfo.Close()
+
             End If
         Else
             Dim addInfo As New System.IO.StreamWriter(txtName.Text & ".txt")
@@ -273,45 +297,6 @@
             addInfo.WriteLine(lblINT.Text)
             addInfo.WriteLine(lblWIS.Text)
             addInfo.WriteLine(lblCHA.Text)
-            addInfo.WriteLine(rtbBiography.Text)
-            addInfo.WriteLine("")
-            addInfo.WriteLine("--FEATS--")
-
-            If Feats("Alertness") = True Then
-                addInfo.WriteLine("Alertness")
-            End If
-
-            If Feats("Ambidexterity") = True Then
-                addInfo.WriteLine("Ambidexterity")
-            End If
-
-            If Feats("ArmorH") = True Then
-                addInfo.WriteLine("Armor Proficiency (H)")
-            End If
-
-            If Feats("ArmorM") = True Then
-                addInfo.WriteLine("Armor Proficiency (M)")
-            End If
-
-            If Feats("ArmorL") = True Then
-                addInfo.WriteLine("Armor Proficiency (L)")
-            End If
-
-            If Feats("BlindFight") = True Then
-                addInfo.WriteLine("Blind Fight")
-            End If
-
-            If Feats("Blooded") = True Then
-                addInfo.WriteLine("Blooded")
-            End If
-
-            If Feats("PowrAttack") = True Then
-                addInfo.WriteLine("Power Attack")
-            End If
-
-            If Feats("Cleave") = True Then
-                addInfo.WriteLine("Cleave")
-            End If
 
             addInfo.WriteLine("")
             addInfo.WriteLine("--SKILLS--")
@@ -321,7 +306,70 @@
             addInfo.WriteLine("Discipline: " & Skills("Discipline"))
             addInfo.WriteLine("Intimidate: " & Skills("Intimidate"))
             addInfo.WriteLine("Parry: " & Skills("Parry"))
+
+            addInfo.WriteLine("")
+            addInfo.WriteLine("--FEATS--")
+
+            If Feats("Alertness") = True Then
+                addInfo.WriteLine("Alertness")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("Ambidexterity") = True Then
+                addInfo.WriteLine("Ambidexterity")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("ArmorH") = True Then
+                addInfo.WriteLine("Armor Proficiency (H)")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("ArmorM") = True Then
+                addInfo.WriteLine("Armor Proficiency (M)")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("ArmorL") = True Then
+                addInfo.WriteLine("Armor Proficiency (L)")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("BlindFight") = True Then
+                addInfo.WriteLine("Blind Fight")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("Blooded") = True Then
+                addInfo.WriteLine("Blooded")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("PowerAttack") = True Then
+                addInfo.WriteLine("Power Attack")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            If Feats("Cleave") = True Then
+                addInfo.WriteLine("Cleave")
+            Else
+                addInfo.WriteLine("")
+            End If
+
+            addInfo.WriteLine("")
+            addInfo.WriteLine("--BIOGRAPHY--")
+            addInfo.WriteLine(rtbBiography.Text)
+
             addInfo.Close()
+
         End If
     End Sub
 
@@ -350,4 +398,9 @@
 
     End Sub
 
+    Private Sub rtbBiography_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs) Handles rtbBiography.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            e.SuppressKeyPress = True
+        End If
+    End Sub
 End Class

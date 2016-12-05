@@ -141,6 +141,7 @@ Partial Class SkillReview
         Me.Controls.Add(Me.lblIntimidate)
         Me.Controls.Add(Me.lblParry)
         Me.Controls.Add(Me.rtbSkillInfo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "SkillReview"
         Me.Text = "Skills"
         Me.ResumeLayout(False)

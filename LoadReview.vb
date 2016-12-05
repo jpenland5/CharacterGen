@@ -23,12 +23,48 @@ Public Class LoadReview
         lblCHA.Text = mAllInfo(11)
 
         'Skills
-        lblAppraise.Text = mAllInfo(21)
-        lblBluff.Text = mAllInfo(22)
-        lblConcentration.Text = mAllInfo(23)
-        lblDiscipline.Text = mAllInfo(24)
-        lblIntimidate.Text = mAllInfo(25)
-        lblParry.Text = mAllInfo(26)
+        lblAppraise.Text = mAllInfo(14)
+        lblBluff.Text = mAllInfo(15)
+        lblConcentration.Text = mAllInfo(16)
+        lblDiscipline.Text = mAllInfo(17)
+        lblIntimidate.Text = mAllInfo(18)
+        lblParry.Text = mAllInfo(19)
+
+        If mAllInfo(22) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(22))
+        End If
+        If mAllInfo(23) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(23))
+        End If
+        If mAllInfo(24) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(24))
+        End If
+        If mAllInfo(25) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(25))
+        End If
+        If mAllInfo(26) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(26))
+        End If
+        If mAllInfo(27) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(27))
+        End If
+        If mAllInfo(28) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(28))
+        End If
+        If mAllInfo(29) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(29))
+        End If
+        If mAllInfo(30) IsNot "" Then
+            rtbFeats.AppendText(Environment.NewLine & mAllInfo(30))
+        End If
+
+        rtbBiography.AppendText(mAllInfo(33))
+
+    End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+
+        Me.Close()
 
     End Sub
 End Class
