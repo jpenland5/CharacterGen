@@ -47,7 +47,10 @@ Partial Class Skills
         Me.btnConcentrationDown = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox2.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'RichTextBox2
@@ -283,12 +286,27 @@ Partial Class Skills
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusLabel})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 332)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(460, 22)
+        Me.StatusStrip1.TabIndex = 47
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'statusLabel
+        '
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(0, 17)
+        '
         'Skills
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(460, 354)
         Me.ControlBox = False
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.lblAppraise)
@@ -317,7 +335,10 @@ Partial Class Skills
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Skills"
         Me.GroupBox2.ResumeLayout(False)
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents RichTextBox2 As RichTextBox
@@ -344,4 +365,6 @@ Partial Class Skills
     Friend WithEvents btnConcentrationDown As Button
     Friend WithEvents btnSave As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusLabel As ToolStripStatusLabel
 End Class

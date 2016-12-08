@@ -38,6 +38,9 @@ Partial Class Classes
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnBarb
@@ -177,12 +180,27 @@ Partial Class Classes
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusLabel})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 435)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(427, 22)
+        Me.StatusStrip1.TabIndex = 15
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'statusLabel
+        '
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(0, 17)
+        '
         'Classes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(427, 439)
+        Me.ClientSize = New System.Drawing.Size(427, 457)
         Me.ControlBox = False
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.RichTextBox1)
@@ -202,7 +220,10 @@ Partial Class Classes
         Me.Name = "Classes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Classes"
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -221,4 +242,6 @@ Partial Class Classes
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents btnSave As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusLabel As ToolStripStatusLabel
 End Class

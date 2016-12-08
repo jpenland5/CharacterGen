@@ -62,10 +62,13 @@
 
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub btnBack_Click(sender As Object, e As EventArgs)
 
         Me.Close()
 
     End Sub
 
+    Private Sub btnBack_Click_1(sender As Object, e As EventArgs) Handles btnBack.Click
+        Me.Close()
+    End Sub
 End Class

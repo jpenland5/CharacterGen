@@ -17,5 +17,4 @@ C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\ob
 C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Gender.resources
 C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Alignment.resources
 C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.Review.resources
-C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.SkillReview.resources
 C:\Users\Xeku\Documents\Visual Studio 2015\Projects\CharacterGen\CharacterGen\obj\Debug\CharacterGen.LoadReview.resources

@@ -34,6 +34,9 @@ Partial Class Race
         Me.rtbRaceDetail = New System.Windows.Forms.RichTextBox()
         Me.btnSaveRace = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'RichTextBox1
@@ -137,12 +140,27 @@ Partial Class Race
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusLabel})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 368)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(382, 22)
+        Me.StatusStrip1.TabIndex = 12
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'statusLabel
+        '
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(0, 17)
+        '
         'Race
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 369)
+        Me.ClientSize = New System.Drawing.Size(382, 390)
         Me.ControlBox = False
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnSaveRace)
         Me.Controls.Add(Me.rtbRaceDetail)
@@ -158,7 +176,10 @@ Partial Class Race
         Me.Name = "Race"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Race"
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -173,4 +194,6 @@ Partial Class Race
     Friend WithEvents rtbRaceDetail As RichTextBox
     Friend WithEvents btnSaveRace As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusLabel As ToolStripStatusLabel
 End Class

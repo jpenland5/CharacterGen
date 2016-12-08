@@ -1,0 +1,34 @@
+--PRIMARY STATS--
+Name: fbdbdf
+Race: Human
+Gender: Male
+Class: Monk
+Alignment: Lawful Good
+Strength: 15
+Dexterity: 12
+Constitution: 11
+Intelligence: 10
+Wisdom: 12
+Charisma: 12
+
+--SKILLS--
+Appraise: 0
+Bluff: 0
+Concentration: 0
+Discipline: 0
+Intimidate: 0
+Parry: 0
+
+--FEATS--
+
+
+
+
+
+
+
+Power Attack
+Cleave
+
+--BIOGRAPHY--
+bfbddrbdfb

@@ -120,4 +120,7 @@
   <data name="RichTextBox1.Text" xml:space="preserve">
     <value>Welcome to alignment selection! Alignment is a choice related to your character's moral compass, and reflects in large part how they view the world around them. While it doesn't directly influence one's abilities, alignment can have a great effect on how others react to and treat your character based on their own feelings. The further apart two alignments are, the less well they tend to get along! Select an alignment for more details.</value>
   </data>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

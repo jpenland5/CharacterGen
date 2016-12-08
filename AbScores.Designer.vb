@@ -22,6 +22,7 @@ Partial Class AbScores
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AbScores))
         Me.btnSTRUp = New System.Windows.Forms.Button()
         Me.btnSTRDown = New System.Windows.Forms.Button()
         Me.lblCHA = New System.Windows.Forms.Label()
@@ -47,8 +48,12 @@ Partial Class AbScores
         Me.btnSaveScores = New System.Windows.Forms.Button()
         Me.btnResetScores = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.rtbAbScoreInfo = New System.Windows.Forms.RichTextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnSTRUp
@@ -228,15 +233,13 @@ Partial Class AbScores
         'RichTextBox1
         '
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 244)
+        Me.RichTextBox1.Location = New System.Drawing.Point(198, 12)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.RichTextBox1.Size = New System.Drawing.Size(213, 70)
+        Me.RichTextBox1.Size = New System.Drawing.Size(323, 55)
         Me.RichTextBox1.TabIndex = 23
-        Me.RichTextBox1.Text = "Welcome to point buy! Spend points to improve your character's initial ability sc" &
-    "ores. The higher the score, the more points it costs to improve, so choose wisel" &
-    "y!"
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'GroupBox1
         '
@@ -258,7 +261,7 @@ Partial Class AbScores
         Me.GroupBox1.Controls.Add(Me.btnDEXDown)
         Me.GroupBox1.Controls.Add(Me.btnINTDown)
         Me.GroupBox1.Controls.Add(Me.btnCONDown)
-        Me.GroupBox1.Location = New System.Drawing.Point(32, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 73)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(170, 165)
         Me.GroupBox1.TabIndex = 24
@@ -268,7 +271,7 @@ Partial Class AbScores
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.lblPoints)
-        Me.GroupBox2.Location = New System.Drawing.Point(59, 183)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(103, 55)
         Me.GroupBox2.TabIndex = 25
@@ -287,7 +290,7 @@ Partial Class AbScores
         '
         'btnSaveScores
         '
-        Me.btnSaveScores.Location = New System.Drawing.Point(59, 320)
+        Me.btnSaveScores.Location = New System.Drawing.Point(38, 244)
         Me.btnSaveScores.Name = "btnSaveScores"
         Me.btnSaveScores.Size = New System.Drawing.Size(117, 23)
         Me.btnSaveScores.TabIndex = 26
@@ -296,7 +299,7 @@ Partial Class AbScores
         '
         'btnResetScores
         '
-        Me.btnResetScores.Location = New System.Drawing.Point(59, 349)
+        Me.btnResetScores.Location = New System.Drawing.Point(38, 273)
         Me.btnResetScores.Name = "btnResetScores"
         Me.btnResetScores.Size = New System.Drawing.Size(117, 23)
         Me.btnResetScores.TabIndex = 27
@@ -305,19 +308,45 @@ Partial Class AbScores
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(59, 378)
+        Me.btnBack.Location = New System.Drawing.Point(38, 302)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(117, 23)
         Me.btnBack.TabIndex = 28
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusLabel})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 336)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(535, 22)
+        Me.StatusStrip1.TabIndex = 29
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'statusLabel
+        '
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(0, 17)
+        '
+        'rtbAbScoreInfo
+        '
+        Me.rtbAbScoreInfo.BackColor = System.Drawing.SystemColors.Control
+        Me.rtbAbScoreInfo.Location = New System.Drawing.Point(198, 57)
+        Me.rtbAbScoreInfo.Name = "rtbAbScoreInfo"
+        Me.rtbAbScoreInfo.ReadOnly = True
+        Me.rtbAbScoreInfo.Size = New System.Drawing.Size(323, 268)
+        Me.rtbAbScoreInfo.TabIndex = 30
+        Me.rtbAbScoreInfo.Text = ""
+        '
         'AbScores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(237, 416)
+        Me.ClientSize = New System.Drawing.Size(535, 358)
         Me.ControlBox = False
+        Me.Controls.Add(Me.rtbAbScoreInfo)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnResetScores)
         Me.Controls.Add(Me.btnSaveScores)
@@ -331,7 +360,10 @@ Partial Class AbScores
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -360,4 +392,7 @@ Partial Class AbScores
     Friend WithEvents btnSaveScores As Button
     Friend WithEvents btnResetScores As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusLabel As ToolStripStatusLabel
+    Friend WithEvents rtbAbScoreInfo As RichTextBox
 End Class

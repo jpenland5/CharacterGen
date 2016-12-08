@@ -1,0 +1,34 @@
+--PRIMARY STATS--
+Name: llll
+Race: Human
+Gender: Male
+Class: Fighter
+Alignment: Lawful Evil
+Strength: 15
+Dexterity: 11
+Constitution: 9
+Intelligence: 8
+Wisdom: 8
+Charisma: 17
+
+--SKILLS--
+Appraise: 4
+Bluff: 4
+Concentration: 4
+Discipline: 4
+Intimidate: 0
+Parry: 0
+
+--FEATS--
+
+
+Armor Proficiency (H)
+Armor Proficiency (M)
+Armor Proficiency (L)
+Blind Fight
+
+Power Attack
+Cleave
+
+--BIOGRAPHY--
+dsvfdsgsfsd

@@ -47,7 +47,10 @@ Partial Class Feats
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblFeats = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox2.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'chkAmbidex
@@ -289,12 +292,27 @@ Partial Class Feats
         Me.RichTextBox1.Text = "NOTE: This form is for code demonstration only and does not represent the full li" &
     "st of available feats."
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusLabel})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 345)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(454, 22)
+        Me.StatusStrip1.TabIndex = 29
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'statusLabel
+        '
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(0, 17)
+        '
         'Feats
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(454, 351)
+        Me.ClientSize = New System.Drawing.Size(454, 367)
         Me.ControlBox = False
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.lblCleave)
@@ -326,6 +344,8 @@ Partial Class Feats
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Feats"
         Me.GroupBox2.ResumeLayout(False)
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -355,4 +375,6 @@ Partial Class Feats
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents lblFeats As Label
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusLabel As ToolStripStatusLabel
 End Class

@@ -121,4 +121,7 @@
     <value>Welcome to race selection! The many races of the land are similar, yet unique; all possess the same basic aptitudes, but many excel in particular areas and may
  be weaker in others. Select a race for more details.</value>
   </data>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

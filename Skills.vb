@@ -36,10 +36,10 @@
                 mSkillPoints -= 1
                 lblSkillPoints.Text = mSkillPoints
             Else
-                MessageBox.Show("You don't have any skill points remaining!")
+                statusLabel.Text = "You don't have any skill points remaining!"
             End If
         Else
-            MessageBox.Show("You can't put more than 4 points into a skill at character creation!")
+            statusLabel.Text = "You can't put more than 4 points into a skill at character creation!"
         End If
     End Sub
 
@@ -51,7 +51,7 @@
             mSkillPoints += 1
             lblSkillPoints.Text = mSkillPoints
         Else
-            MessageBox.Show("You can't decrease this skill any further!")
+            statusLabel.Text = "You can't decrease this skill any further!"
         End If
 
     End Sub
@@ -73,10 +73,10 @@
                 mSkillPoints -= 1
                 lblSkillPoints.Text = mSkillPoints
             Else
-                MessageBox.Show("You don't have any skill points remaining!")
+                statusLabel.Text = "You don't have any skill points remaining!"
             End If
         Else
-            MessageBox.Show("You can't put more than 4 points into a skill at character creation!")
+            statusLabel.Text = "You can't put more than 4 points into a skill at character creation!"
         End If
 
     End Sub
@@ -89,7 +89,7 @@
             mSkillPoints += 1
             lblSkillPoints.Text = mSkillPoints
         Else
-            MessageBox.Show("You can't decrease this skill any further!")
+            statusLabel.Text = "You can't decrease this skill any further!"
         End If
 
     End Sub
@@ -111,10 +111,10 @@
                 mSkillPoints -= 1
                 lblSkillPoints.Text = mSkillPoints
             Else
-                MessageBox.Show("You don't have any skill points remaining!")
+                statusLabel.Text = "You don't have any skill points remaining!"
             End If
         Else
-            MessageBox.Show("You can't put more than 4 points into a skill at character creation!")
+            statusLabel.Text = "You can't put more than 4 points into a skill at character creation!"
         End If
 
     End Sub
@@ -127,7 +127,7 @@
             mSkillPoints += 1
             lblSkillPoints.Text = mSkillPoints
         Else
-            MessageBox.Show("You can't decrease this skill any further!")
+            statusLabel.Text = "You can't decrease this skill any further!"
         End If
 
     End Sub
@@ -149,10 +149,10 @@
                 mSkillPoints -= 1
                 lblSkillPoints.Text = mSkillPoints
             Else
-                MessageBox.Show("You don't have any skill points remaining!")
+                statusLabel.Text = "You don't have any skill points remaining!"
             End If
         Else
-            MessageBox.Show("You can't put more than 4 points into a skill at character creation!")
+            statusLabel.Text = "You can't put more than 4 points into a skill at character creation!"
         End If
 
     End Sub
@@ -165,7 +165,7 @@
             mSkillPoints += 1
             lblSkillPoints.Text = mSkillPoints
         Else
-            MessageBox.Show("You can't decrease this skill any further!")
+            statusLabel.Text = "You can't decrease this skill any further!"
         End If
 
     End Sub
@@ -187,10 +187,10 @@
                 mSkillPoints -= 1
                 lblSkillPoints.Text = mSkillPoints
             Else
-                MessageBox.Show("You don't have any skill points remaining!")
+                statusLabel.Text = "You don't have any skill points remaining!"
             End If
         Else
-            MessageBox.Show("You can't put more than 4 points into a skill at character creation!")
+            statusLabel.Text = "You can't put more than 4 points into a skill at character creation!"
         End If
 
     End Sub
@@ -203,7 +203,7 @@
             mSkillPoints += 1
             lblSkillPoints.Text = mSkillPoints
         Else
-            MessageBox.Show("You can't decrease this skill any further!")
+            statusLabel.Text = "You can't decrease this skill any further!"
         End If
 
     End Sub
@@ -225,10 +225,10 @@
                 mSkillPoints -= 1
                 lblSkillPoints.Text = mSkillPoints
             Else
-                MessageBox.Show("You don't have any skill points remaining!")
+                statusLabel.Text = "You don't have any skill points remaining!"
             End If
         Else
-            MessageBox.Show("You can't put more than 4 points into a skill at character creation!")
+            statusLabel.Text = "You can't put more than 4 points into a skill at character creation!"
         End If
 
     End Sub
@@ -241,7 +241,7 @@
             mSkillPoints += 1
             lblSkillPoints.Text = mSkillPoints
         Else
-            MessageBox.Show("You can't decrease this skill any further!")
+            statusLabel.Text = "You can't decrease this skill any further!"
         End If
 
     End Sub
@@ -268,7 +268,7 @@
         'This validation is disabled to allow the user to progress beyond this screen in such an event
 
         'If mSkillPoints > 0 Then
-        '    MessageBox.Show("Please spend all skill points before continuing!")
+        '    statusLabel.Text = "Please spend all skill points before continuing!")
         '    Exit Sub
         'Else
 
@@ -276,11 +276,14 @@
         Initial.btnReview.Enabled = True
             Me.Close()
 
-            'Enables the save button
-            Initial.btnSave.Enabled = True
+        'Enables the save button
+        Initial.btnSave.Enabled = True
 
-            'Disables the button for the current step
-            Initial.btnSkills.Enabled = False
+        'Disables the button for the current step
+        Initial.btnSkills.Enabled = False
+
+        'Enables the save button in the menu
+        Initial.SaveCharacterToolStripMenuItem.Enabled = True
 
         'End If
 

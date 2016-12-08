@@ -1,0 +1,34 @@
+--PRIMARY STATS--
+Name: ffff
+Race: Half-Elf
+Gender: Male
+Class: Wizard
+Alignment: True Neutral
+Strength: 18
+Dexterity: 15
+Constitution: 9
+Intelligence: 8
+Wisdom: 8
+Charisma: 8
+
+--SKILLS--
+Appraise: 4
+Bluff: 3
+Concentration: 2
+Discipline: 2
+Intimidate: 2
+Parry: 3
+
+--FEATS--
+
+
+
+
+
+
+
+Power Attack
+
+
+--BIOGRAPHY--
+feffdsf

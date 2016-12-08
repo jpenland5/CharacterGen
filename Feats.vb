@@ -143,7 +143,7 @@
 
         If mFeats > 0 Then
 
-            MessageBox.Show("Please select all feats before continuing!")
+            statusLabel.Text = "Please select all feats before continuing!"
             Exit Sub
 
         Else
@@ -219,7 +219,7 @@
 
         If chkPowerAttack.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkPowerAttack.Checked = False
                 Exit Sub
@@ -244,12 +244,10 @@
 
     Private Sub chkArmorL_CheckedChanged(sender As Object, e As EventArgs) Handles chkArmorL.CheckedChanged
 
-        'If mFeats = 0 Then
-        '    MessageBox.Show("You don't have any feats left to select!")
-        '    Exit Sub
+
         If chkArmorL.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkArmorL.Checked = False
                 Exit Sub
@@ -270,12 +268,9 @@
 
     Private Sub chkArmorM_CheckedChanged(sender As Object, e As EventArgs) Handles chkArmorM.CheckedChanged
 
-        'If mFeats = 0 Then
-        '    MessageBox.Show("You don't have any feats left to select!")
-        '    Exit Sub
         If chkArmorM.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkArmorM.Checked = False
                 Exit Sub
@@ -297,7 +292,7 @@
 
         If chkArmorH.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkArmorH.Checked = False
                 Exit Sub
@@ -319,7 +314,7 @@
 
         If chkAlertness.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkAlertness.Checked = False
                 Exit Sub
@@ -340,7 +335,7 @@
 
         If chkAmbidex.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkAmbidex.Checked = False
                 Exit Sub
@@ -361,7 +356,7 @@
 
         If chkBlindFight.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkBlindFight.Checked = False
                 Exit Sub
@@ -382,7 +377,7 @@
 
         If chkBlooded.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkBlooded.Checked = False
                 Exit Sub
@@ -403,7 +398,7 @@
 
         If chkCleave.Checked = True Then
             If mFeats = 0 Then
-                MessageBox.Show("You don't have any feats left to select!")
+                statusLabel.Text = "You don't have any feats left to select!"
                 mFeats -= 1
                 chkCleave.Checked = False
                 Exit Sub

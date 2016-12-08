@@ -120,4 +120,7 @@
   <data name="RichTextBox2.Text" xml:space="preserve">
     <value>Welcome to skill selection! Skills determine your character's aptitude at various tasks: the higher the skill rating, the better your chances of success! High ability scores may give bonuses to related skills. Total skill points are determined by your class and Intelligence. Click the name of a skill to know more.</value>
   </data>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

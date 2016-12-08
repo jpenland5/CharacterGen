@@ -57,8 +57,11 @@ Partial Class Initial
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnReview = New System.Windows.Forms.Button()
         Me.CharacterLoad = New System.Windows.Forms.OpenFileDialog()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtName
@@ -209,6 +212,7 @@ Partial Class Initial
         '
         'SaveCharacterToolStripMenuItem
         '
+        Me.SaveCharacterToolStripMenuItem.Enabled = False
         Me.SaveCharacterToolStripMenuItem.Name = "SaveCharacterToolStripMenuItem"
         Me.SaveCharacterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveCharacterToolStripMenuItem.Text = "Save Character"
@@ -382,11 +386,26 @@ Partial Class Initial
         '
         Me.CharacterLoad.FileName = "OpenFileDialog1"
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusLabel})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 522)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(327, 22)
+        Me.StatusStrip1.TabIndex = 19
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'statusLabel
+        '
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(0, 17)
+        '
         'Initial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(327, 523)
+        Me.ClientSize = New System.Drawing.Size(327, 544)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnReview)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnGender)
@@ -416,6 +435,8 @@ Partial Class Initial
         Me.GroupBox1.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -456,4 +477,6 @@ Partial Class Initial
     Friend WithEvents btnBack As Button
     Friend WithEvents btnReview As Button
     Friend WithEvents CharacterLoad As OpenFileDialog
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusLabel As ToolStripStatusLabel
 End Class

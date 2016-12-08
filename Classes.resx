@@ -121,4 +121,7 @@
     <value>Welcome to class selection! Classes are most easily equated to being the profession of your character. In the world of D&amp;D, you can be an expert at anything from picking locks, to weaving magical incantations into powerful spells, or even just hitting things really hard with a big club. Select a class for more information.
 </value>
   </data>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
